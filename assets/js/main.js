@@ -439,7 +439,6 @@ $(document).ready(function () {
 		var footerTop = $footer.offset().top;
 		var windowBottom = $(window).scrollTop() + $(window).height();
 
-		// If the bottom of the window is greater than or equal to the top of the footer, hide the button
 		if (windowBottom >= footerTop) {
 			$btnBookNow.addClass("hide");
 		} else {
@@ -447,16 +446,14 @@ $(document).ready(function () {
 		}
 	}
 
-	// Check on scroll and on load
 	$(window).on("scroll resize", checkFooterVisibility);
-	checkFooterVisibility(); // Initial check when the page loads
+	checkFooterVisibility();
 
 	$(document).on("mouseover", ".tab-link", function () {
 		var numberIndex = $(this).index();
 		$(".tab-link").removeClass("active");
 		$(".c-members__content").removeClass("active animationTabLink");
 
-		// If the tab is already active, do nothing
 		if ($(this).hasClass("active")) {
 			return;
 		}
@@ -484,8 +481,6 @@ $(document).ready(function () {
 
 	function tabContentShowHideMobile(clickedElement) {
 		var targetContent = $("#content-" + clickedElement.data("target"));
-
-		// Hide currently active tab content, except for the one being clicked
 		$(".tab-content.active")
 			.not(targetContent)
 			.each(function () {
@@ -493,39 +488,33 @@ $(document).ready(function () {
 				$(".c-members__accordion-item__title").removeClass("active");
 			});
 
-		// Check if the clicked tab content is already active
 		if (targetContent.hasClass("active")) {
 			var contentHeight = targetContent.prop("scrollHeight");
 			targetContent.css("height", contentHeight + "px");
 
-			// Collapse the content
 			requestAnimationFrame(function () {
 				targetContent.css("height", 0);
 			});
 
-			// Once the transition ends, deactivate the content
 			targetContent.off("transitionend").on("transitionend", function () {
 				targetContent.removeClass("active");
-				$(this).parent().removeClass("active"); // Deactivate parent of the current tab
+				$(this).parent().removeClass("active");
 				targetContent.css("height", "");
 			});
 
 			clickedElement.parent().removeClass("active");
 		} else {
-			// Activate the clicked tab content
 			targetContent.addClass("active");
-			clickedElement.parent().addClass("active"); // Activate the parent of the clicked element
+			clickedElement.parent().addClass("active");
 
 			targetContent.css("height", "auto");
 			var contentHeight = targetContent.prop("scrollHeight");
 			targetContent.css("height", 0);
 
-			// Expand the content with a slight delay
 			setTimeout(function () {
 				targetContent.css("height", contentHeight + "px");
 			}, 10);
 
-			// Ensure height is set to auto after transition
 			targetContent.off("transitionend").on("transitionend", function () {
 				if (targetContent.hasClass("active")) {
 					targetContent.css("height", "auto");
@@ -534,7 +523,6 @@ $(document).ready(function () {
 		}
 	}
 
-	// Attach the click event handler to all accordion links
 	$(".accordion-link").on("click", function () {
 		tabContentShowHideMobile($(this));
 	});

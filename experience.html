@@ -380,40 +380,40 @@
                                 Filters
                             </span>
                         </div>
-                        <div class="c-course__range__filterclear">
-                            <a class="c-course__range__clearmobile" href="#">
-                                Clear Filters
-                                <img src="./assets/images/delete-default.png" alt="delete" class="c-course__range__icon-margin">
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <!-- for mobile open-->
                 <div class="c-course__range__mobile-items mobile-items">
                     <div class="c-course__range__headwrap">
                         <h5 class="c-course__range__heading">Filter by</h5>
-                        <button class="c-course__range__closefilter close-filter">
+                        <a href="#" class="c-course__range__closefilter close-filter">
                             <img src="./assets/images/close.png" alt="close">
-                        </button>
+                        </a>
                     </div>
-                    <div class="c-course__range__filmobtn">
+
+                    <div class="c-course__range__filmobtn selected_filters">
                         <a href="#" class="c-course__range__filmolinks">All Experiences</a>
-                        <a href="#" class="c-course__range__filmolinks">2 Hours</a>
-                        <a href="#" class="c-course__range__filmolinks">All Levels</a>
-                        <a href="#" class="c-course__range__filmolinks">$1 - $50</a>
-                        <a href="#" class="c-course__range__clearmobile">Clean Filters</a>
                     </div>
+
+                    <div class="c-course__range__filterclear">
+                        <a class="c-course__range__clearmobile" href="#">
+                            Clear Filters
+                            <img src="./assets/images/delete-default.png" alt="delete" class="c-course__range__icon-margin">
+                        </a>
+                    </div>
+
                     <div class="c-course__range__overwrap">
-                        <div class="c-course__range__bottomrad">
+                        <div class="c-course__range__bottomrad mobile-category">
                             <span class="c-course__range__radheading">Type</span>
                             <div class="c-course__range__radwrap">
                                 <input
                                     class="form-check-input c-course__range__raditem "
                                     type="radio"
                                     name="option"
-                                    id="All Experiences"
+                                    id="allExperiences"
+                                    checked
                                 >
-                                <label class="c-course__range__label" for="All Experiences">
+                                <label class="c-course__range__label" for="allExperiences">
                                     All Experiences
                                 </label>
                             </div>
@@ -422,9 +422,9 @@
                                     class="form-check-input c-course__range__raditem"
                                     type="radio"
                                     name="option"
-                                    id="Challenges"
+                                    id="challenges"
                                 >
-                                <label class="c-course__range__label" for="Challenges">
+                                <label class="c-course__range__label" for="challenges">
                                     Challenges
                                 </label>
                             </div>
@@ -433,9 +433,9 @@
                                     class="form-check-input c-course__range__raditem"
                                     type="radio"
                                     name="option"
-                                    id="Courses"
+                                    id="courses"
                                 >
-                                <label class="c-course__range__label" for="Courses">
+                                <label class="c-course__range__label" for="courses">
                                     Courses
                                 </label>
                             </div>
@@ -444,14 +444,14 @@
                                     class="form-check-input c-course__range__raditem"
                                     type="radio"
                                     name="option"
-                                    id="Open Ranges"
+                                    id="openRanges"
                                 >
-                                <label class="c-course__range__label" for="Open Ranges">
+                                <label class="c-course__range__label" for="openRanges">
                                     Open Ranges
                                 </label>
                             </div>
                         </div>
-                        <div class="c-course__range__bottomrad">
+                        <div class="c-course__range__bottomrad mobile-duration">
                             <div class="c-course__range__filter-item">
                                 <figure class="mb-0">
                                     <img src="./assets/images/clock.png" alt="clock" class="c-course__range__icon">
@@ -507,7 +507,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="c-course__range__bottomrad">
+                        <div class="c-course__range__bottomrad mobile-level">
                             <div class="c-course__range__filter-item">
                                 <span class="c-course__range__name ">
                                     <img src="./assets/images/bar_chart.png" alt="chart" class="c-course__range__icon">
@@ -520,9 +520,9 @@
                                         class="form-check-input c-course__range__chitem"
                                         type="checkbox"
                                         value=""
-                                        id="Alllevel"
+                                        id="allLevel"
                                     >
-                                    <label class="c-course__range__label" for="Alllevel">
+                                    <label class="c-course__range__label" for="allLevel">
                                         All levels
                                     </label>
                                 </div>
@@ -531,9 +531,9 @@
                                         class="form-check-input c-course__range__chitem"
                                         type="checkbox"
                                         value=""
-                                        id="Beginner"
+                                        id="beginner"
                                     >
-                                    <label class="c-course__range__label" for="Beginner">
+                                    <label class="c-course__range__label" for="beginner">
                                         Beginner
                                     </label>
                                 </div>
@@ -542,9 +542,9 @@
                                         class="form-check-input c-course__range__chitem"
                                         type="checkbox"
                                         value=""
-                                        id="Intermediate"
+                                        id="intermediate"
                                     >
-                                    <label class="c-course__range__label" for="Intermediate">
+                                    <label class="c-course__range__label" for="intermediate">
                                         Intermediate
                                     </label>
                                 </div>
@@ -553,9 +553,9 @@
                                         class="form-check-input c-course__range__chitem"
                                         type="checkbox"
                                         value=""
-                                        id="Advanced"
+                                        id="advanced"
                                     >
-                                    <label class="c-course__range__label" for="Advanced">
+                                    <label class="c-course__range__label" for="advanced">
                                         Advanced
                                     </label>
                                 </div>
@@ -564,15 +564,15 @@
                                         class="form-check-input c-course__range__chitem"
                                         type="checkbox"
                                         value=""
-                                        id="Expert"
+                                        id="expert"
                                     >
-                                    <label class="c-course__range__label" for="Expert">
+                                    <label class="c-course__range__label" for="expert">
                                         Expert
                                     </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="c-course__range__lastcheck">
+                        <div class="c-course__range__lastcheck mobile-price">
                             <div class="c-course__range__filter-item">
                                 <span class="c-course__range__name ">
                                     <img src="./assets/images/price.png" alt="price" class="c-course__range__icon">
@@ -642,8 +642,9 @@
                         <a class="btn btn-outline-dark c-course__range__filbtn">APPLY FILTERS</a>
                     </div>
                 </div>
+
                 <div class="container">
-                    <div class="experience pt-0">
+                    <div class="experience pt-0 pb-0">
                         <div class="experience__contgap cardcontent">
                             <div
                                 class="experience__card experience__cheight cardexp"
@@ -651,6 +652,10 @@
                                 data-duration="60"
                                 data-level="medium"
                                 data-price="250"
+                                data-mobile-category="allExperiences challenges courses"
+                                data-mobile-duration="1"
+                                data-mobile-level="beginner"
+                                data-mobile-price="75"
                             >
                                 <h3 class="experience__nonHoveredtitle">GUNSLINGER CANYON</h3>
                                 <div class="experience__img-holder">
@@ -714,6 +719,10 @@
                                 data-duration="30"
                                 data-level="easy"
                                 data-price="150"
+                                data-mobile-category="allExperiences openRanges challenges"
+                                data-mobile-duration="3"
+                                data-mobile-level="intermediate"
+                                data-mobile-price="50"
                             >
                                 <h3 class="experience__nonHoveredtitle">1-Mile Shot</h3>
                                 <div class="experience__img-holder">
@@ -777,13 +786,17 @@
                                 data-duration="45"
                                 data-level="hard"
                                 data-price="150"
+                                data-mobile-category="allExperiences challenges courses"
+                                data-mobile-duration="5"
+                                data-mobile-level="intermediate"
+                                data-mobile-price="150"
                             >
                                 <h3 class="experience__nonHoveredtitle">Freedom Night Shoot</h3>
                                 <div class="experience__img-holder">
                                     <figure>
                                         <picture>
-                                            <source media="(max-width: 390px)" srcset="./assets/images/event-card-8-m.jpg">
-                                            <source media="(min-width: 3901x)" srcset="./assets/images/Component18.jpg">
+                                            <source media="(max-width: 390px)" srcset="./assets/images/event-card-8-m.png">
+                                            <source media="(min-width: 3901x)" srcset="./assets/images/Component18.png">
                                             <img class="img-fluid experience__img-holder__image" src="./assets/images/event-card-8.png">
                                         </picture>
                                     </figure>
@@ -840,6 +853,10 @@
                                 data-duration="30"
                                 data-level="easy"
                                 data-price="250"
+                                data-mobile-category="allExperiences challenges"
+                                data-mobile-duration="2"
+                                data-mobile-level="beginner"
+                                data-mobile-price="250"
                             >
                                 <h3 class="experience__nonHoveredtitle">Long Range Royalty​</h3>
                                 <div class="experience__img-holder">
@@ -903,6 +920,10 @@
                                 data-duration="60"
                                 data-level="medium"
                                 data-price="200"
+                                data-mobile-category="allExperiences courses"
+                                data-mobile-duration="3"
+                                data-mobile-level="advanced"
+                                data-mobile-price="15"
                             >
                                 <h3 class="experience__nonHoveredtitle">Sporting Clay Circuit</h3>
                                 <div class="experience__img-holder">
@@ -966,6 +987,10 @@
                                 data-duration="45"
                                 data-level="hard"
                                 data-price="150"
+                                data-mobile-category="allExperiences courses openRanges"
+                                data-mobile-duration="3"
+                                data-mobile-level="advanced"
+                                data-mobile-price="100"
                             >
                                 <h3 class="experience__nonHoveredtitle">5-Stand</h3>
                                 <div class="experience__img-holder">
