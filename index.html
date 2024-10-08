@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/scss/_mixins.scss">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="c-header header-main">
+            <div class="container-fluid">
+                <div class="header-wrapper">
+                    <div class="header-wrapper__inner">
+                        <a href="index.html" class="navbar-brand">
+                            <img
+                                class="logo-img logo-light"
+                                src="assets/images/logo.png"
+                                alt="Logo"
+                                width="120"
+                            >
+                            <img
+                                class="logo-img logo-dark"
+                                src="assets/images/logo-dark.png"
+                                alt="Logo Dark"
+                                width="120"
+                                style="display: none;"
+                            >
+                        </a>
+                        <nav class="navbar navbar-expand-xl navbar-light">
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-controls="navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="navbar-wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="./experience.html"
+                                            >
+                                                <span>
+                                                    EXPERIENCES
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="#" class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    EXPERIENCES
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Gunslinger Challenges</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Courses</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Open Ranges</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    GROUPS
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    GROUPS
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Leadership Training</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Corporate Offsites</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./events.html">
+                                                <span>Events & Competitions</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    Community
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    Community
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Membership</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Our Leaders</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">News</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span>Campus</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mobile-options">
+                                        <a href="#" class="user-icon">
+                                            <span>
+                                                <img src="assets/images/user.svg" class="user-img img-fluid">
+                                            </span>
+                                            Login / Signup
+                                        </a>
+                                        <div class="search-wrapper">
+                                            <div class="search-bar">
+                                                <form action="#" method="get">
+                                                    <div class="input-field">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <span class="search-icon">
+                                                            <img src="assets/images/search.svg" class="img-fluid">
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-filled d-block">
+                                            <span>Book Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="header-right desktop-options">
+                            <div class="search-wrapper">
+                                <a href="#" class="btn btn-cta-light header-icons search-toggle">
+                                    <span>
+                                        <img src="assets/images/search.svg" class="search-img img-fluid" alt="Search Icon">
+                                    </span>
+                                </a>
+                                <!-- Hidden search form -->
+                                <div class="search-bar">
+                                    <form action="#" method="get">
+                                        <div class="input-field">
+                                            <input type="text" class="form-control">
+                                            <span class="search-icon">
+                                                <img src="assets/images/search-dark.svg" class="img-fluid">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a
+                                    href="#"
+                                    class="btn btn-cta-light header-icons"
+                                    id="userDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span>
+                                        <img src="assets/images/user.svg" class="user-img img-fluid" alt="User Icon">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-cta-light">
+                                <span>Book Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid btn-book-now">
+            <a href="#" class="btn btn-filled">
+                <span>Book Now</span>
+            </a>
+        </div>
+        <section class="c-hero" style="background-image: url(./assets/images/HeroImage.jpg);">
+            <video
+                autoplay="autoplay"
+                loop="loop"
+                muted
+                class="c-hero__video-desktop"
+            >
+                <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video
+                autoplay="autoplay"
+                loop="loop"
+                muted
+                class="c-hero__video-mobile"
+            >
+                <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container c-hero__container">
+                <div class="c-hero__text c-hero--text-left">
+                    <h1 class="c-hero__title">
+                        The best day of shooting
+                        <br>
+                        of your life.
+                    </h1>
+                    <div class="c-hero__btn-container">
+                        <a href="#" class="btn btn-outline-light">Learn more about us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="c-challenges"
+            mile-shot-desktopImage="./assets/images/SOF-Section-Desktop2.jpg"
+            night-Shot-desktopImage="./assets/images/SOF-Section-Desktop3.jpg"
+            style="background-image: url(./assets/images/Challenges-Section-C.jpg);"
+        >
+            <div class="container">
+                <div class="c-challenges__header">
+                    <h2 class="c-challenges__title">Special Operations Inspired Challenges</h2>
+                    <span class="c-challenges__description">Experiences curated for everyone and all skill levels.</span>
+                    <a href="#" class="c-challenges__link">Explore All</a>
+                </div>
+                <div class="c-challenges__content">
+                    <div class="c-challenges__cards js-operations">
+                        <div class="c-challenges__card" style="background-image: url(./assets/images/SOF-Section-Mobile2.jpg);">
+                            <div class="c-card c-card--challenge active js-cardAnimation" data-index="0">
+                                <h3 class="c-card__title">Gunslinger Canyon</h3>
+                                <p class="c-card__description">
+                                    Navigate a
+                                    <span class="c-card__bold-description">
+                                        real desert
+                                        canyon, testing your instincts and accuracy
+                                    </span>
+                                    in an unforgettable adventure for
+                                    <span class="c-card__bold-description">all skill levels.</span>
+                                </p>
+                                <a href="#" class="c-card__link">
+                                    Book now
+                                    <img src="./assets/images/arrow_forward.svg" class="c-card__icon" alt="Arrow Icon">
+                                </a>
+                                <div class="c-card__border"></div>
+                            </div>
+                        </div>
+                        <div class="c-challenges__card" style="background-image: url(./assets/images/SOF-Section-Mobile3.jpg);">
+                            <div class="c-card c-card--challenge active js-cardAnimation" data-index="1">
+                                <h3 class="c-card__title">Gunslinger 1-Mile Shot</h3>
+                                <p class="c-card__description">
+                                    Navigate a
+                                    <span class="c-card__bold-description">
+                                        real desert
+                                        canyon, testing your instincts and accuracy
+                                    </span>
+                                    in an unforgettable adventure for
+                                    <span class="c-card__bold-description">all skill levels.</span>
+                                </p>
+                                <a href="#" class="c-card__link">
+                                    Book now
+                                    <img src="./assets/images/arrow_forward.svg" class="c-card__icon" alt="Arrow Icon">
+                                </a>
+                                <div class="c-card__border"></div>
+                            </div>
+                        </div>
+                        <div class="c-challenges__card" style="background-image: url(./assets/images/Discovery-Section-Mobile-image.jpg);">
+                            <div class="c-card c-card--challenge active js-cardAnimation" data-index="2">
+                                <h3 class="c-card__title">Freedom Night Shoot</h3>
+                                <p class="c-card__description">
+                                    Navigate a
+                                    <span class="c-card__bold-description">
+                                        real desert
+                                        canyon, testing your instincts and accuracy
+                                    </span>
+                                    in an unforgettable adventure for
+                                    <span class="c-card__bold-description">all skill levels.</span>
+                                </p>
+                                <a href="#" class="c-card__link">
+                                    Book now
+                                    <img src="./assets/images/arrow_forward.svg" class="c-card__icon">
+                                </a>
+                                <div class="c-card__border"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-challenges__btn">
+                    <a href="#" class="btn btn-outline-light">discover all challenges</a>
+                </div>
+            </div>
+        </section>
+        <section class="c-explore" style="background-image: url(./assets/images/bg-campuses.jpg);">
+            <div class="container c-explore__container">
+                <div class="row c-explore__row">
+                    <div class="col-12 col-xl-6 c-explore__col">
+                        <div class="c-explore__text-holder">
+                            <h2 class="c-explore__title">
+                                Explore
+                                <br>
+                                our campus
+                            </h2>
+                            <p class="c-explore__description">Located just 45 minutes outside Las Vegas.</p>
+                            <a href="#" class="c-explore__link btn btn-outline-light">EXPLORE ALL OUR FACILITIES</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 c-explore__col">
+                        <div class="c-explore__img-holder">
+                            <img src="./assets/images/campuses.jpg" alt="our campuses" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="c-explore__sm-link-div">
+                            <a href="#" class="c-explore__sm-link btn btn-outline-light">EXPLORE ALL OUR FACILITIES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-team" style="background-image: url(./assets/images/team.jpg);">
+            <div class="container c-team__container">
+                <div class="c-team__title">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="83"
+                        height="54"
+                        viewBox="0 0 83 54"
+                        fill="none"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.0835408 28.9281V0H39.2026V28.9281H0.0835408ZM3.15213 5.62375C3.78244 5.62375 4.29341 5.10567 4.29341 4.46659C4.29341 3.82751 3.78244 3.30944 3.15213 3.30944C2.52181 3.30944 2.01084 3.82751 2.01084 4.46659C2.01084 5.10567 2.52181 5.62375 3.15213 5.62375ZM6.81578 5.62375C7.4461 5.62375 7.95707 5.10567 7.95707 4.46659C7.95707 3.82751 7.4461 3.30944 6.81578 3.30944C6.18546 3.30944 5.67449 3.82751 5.67449 4.46659C5.67449 5.10567 6.18546 5.62375 6.81578 5.62375ZM11.6207 4.46659C11.6207 5.10567 11.1097 5.62375 10.4794 5.62375C9.84912 5.62375 9.33815 5.10567 9.33815 4.46659C9.33815 3.82751 9.84912 3.30944 10.4794 3.30944C11.1097 3.30944 11.6207 3.82751 11.6207 4.46659ZM14.1428 5.62375C14.7731 5.62375 15.2841 5.10567 15.2841 4.46659C15.2841 3.82751 14.7731 3.30944 14.1428 3.30944C13.5125 3.30944 13.0015 3.82751 13.0015 4.46659C13.0015 5.10567 13.5125 5.62375 14.1428 5.62375ZM18.9477 4.46659C18.9477 5.10567 18.4367 5.62375 17.8064 5.62375C17.1761 5.62375 16.6651 5.10567 16.6651 4.46659C16.6651 3.82751 17.1761 3.30944 17.8064 3.30944C18.4367 3.30944 18.9477 3.82751 18.9477 4.46659ZM21.4701 5.62375C22.1004 5.62375 22.6114 5.10567 22.6114 4.46659C22.6114 3.82751 22.1004 3.30944 21.4701 3.30944C20.8398 3.30944 20.3288 3.82751 20.3288 4.46659C20.3288 5.10567 20.8398 5.62375 21.4701 5.62375ZM26.275 4.46659C26.275 5.10567 25.764 5.62375 25.1337 5.62375C24.5034 5.62375 23.9924 5.10567 23.9924 4.46659C23.9924 3.82751 24.5034 3.30944 25.1337 3.30944C25.764 3.30944 26.275 3.82751 26.275 4.46659ZM28.7971 5.62375C29.4274 5.62375 29.9383 5.10567 29.9383 4.46659C29.9383 3.82751 29.4274 3.30944 28.7971 3.30944C28.1667 3.30944 27.6558 3.82751 27.6558 4.46659C27.6558 5.10567 28.1667 5.62375 28.7971 5.62375ZM33.602 4.46659C33.602 5.10567 33.091 5.62375 32.4607 5.62375C31.8304 5.62375 31.3194 5.10567 31.3194 4.46659C31.3194 3.82751 31.8304 3.30944 32.4607 3.30944C33.091 3.30944 33.602 3.82751 33.602 4.46659ZM36.1244 5.62375C36.7547 5.62375 37.2657 5.10567 37.2657 4.46659C37.2657 3.82751 36.7547 3.30944 36.1244 3.30944C35.494 3.30944 34.9831 3.82751 34.9831 4.46659C34.9831 5.10567 35.494 5.62375 36.1244 5.62375ZM4.29341 9.44008C4.29341 10.0792 3.78244 10.5972 3.15213 10.5972C2.52181 10.5972 2.01084 10.0792 2.01084 9.44008C2.01084 8.801 2.52181 8.28292 3.15213 8.28292C3.78244 8.28292 4.29341 8.801 4.29341 9.44008ZM6.81578 10.5973C7.4461 10.5973 7.95707 10.0792 7.95707 9.44016C7.95707 8.80107 7.4461 8.283 6.81578 8.283C6.18546 8.283 5.67449 8.80107 5.67449 9.44016C5.67449 10.0792 6.18546 10.5973 6.81578 10.5973ZM11.6207 9.44016C11.6207 10.0792 11.1097 10.5973 10.4794 10.5973C9.84912 10.5973 9.33815 10.0792 9.33815 9.44016C9.33815 8.80107 9.84912 8.283 10.4794 8.283C11.1097 8.283 11.6207 8.80107 11.6207 9.44016ZM14.1428 10.5973C14.7731 10.5973 15.2841 10.0792 15.2841 9.44016C15.2841 8.80107 14.7731 8.283 14.1428 8.283C13.5125 8.283 13.0015 8.80107 13.0015 9.44016C13.0015 10.0792 13.5125 10.5973 14.1428 10.5973ZM18.9477 9.44016C18.9477 10.0792 18.4367 10.5973 17.8064 10.5973C17.1761 10.5973 16.6651 10.0792 16.6651 9.44016C16.6651 8.80107 17.1761 8.283 17.8064 8.283C18.4367 8.283 18.9477 8.80107 18.9477 9.44016ZM21.4701 10.5973C22.1004 10.5973 22.6114 10.0792 22.6114 9.44016C22.6114 8.80107 22.1004 8.283 21.4701 8.283C20.8398 8.283 20.3288 8.80107 20.3288 9.44016C20.3288 10.0792 20.8398 10.5973 21.4701 10.5973ZM26.275 9.44016C26.275 10.0792 25.764 10.5973 25.1337 10.5973C24.5034 10.5973 23.9924 10.0792 23.9924 9.44016C23.9924 8.80107 24.5034 8.283 25.1337 8.283C25.764 8.283 26.275 8.80107 26.275 9.44016ZM28.7971 10.5973C29.4274 10.5973 29.9383 10.0792 29.9383 9.44016C29.9383 8.80107 29.4274 8.283 28.7971 8.283C28.1667 8.283 27.6558 8.80107 27.6558 9.44016C27.6558 10.0792 28.1667 10.5973 28.7971 10.5973ZM33.602 9.44016C33.602 10.0792 33.091 10.5973 32.4607 10.5973C31.8304 10.5973 31.3194 10.0792 31.3194 9.44016C31.3194 8.80107 31.8304 8.283 32.4607 8.283C33.091 8.283 33.602 8.80107 33.602 9.44016ZM36.1244 10.5973C36.7547 10.5973 37.2657 10.0792 37.2657 9.44016C37.2657 8.80107 36.7547 8.283 36.1244 8.283C35.494 8.283 34.9831 8.80107 34.9831 9.44016C34.9831 10.0792 35.494 10.5973 36.1244 10.5973ZM4.29341 14.4134C4.29341 15.0525 3.78244 15.5706 3.15213 15.5706C2.52181 15.5706 2.01084 15.0525 2.01084 14.4134C2.01084 13.7743 2.52181 13.2563 3.15213 13.2563C3.78244 13.2563 4.29341 13.7743 4.29341 14.4134ZM6.81578 15.5706C7.4461 15.5706 7.95707 15.0525 7.95707 14.4134C7.95707 13.7743 7.4461 13.2562 6.81578 13.2562C6.18546 13.2562 5.67449 13.7743 5.67449 14.4134C5.67449 15.0525 6.18546 15.5706 6.81578 15.5706ZM11.6207 14.4134C11.6207 15.0525 11.1097 15.5706 10.4794 15.5706C9.84912 15.5706 9.33815 15.0525 9.33815 14.4134C9.33815 13.7743 9.84912 13.2562 10.4794 13.2562C11.1097 13.2562 11.6207 13.7743 11.6207 14.4134ZM14.1428 15.5706C14.7731 15.5706 15.2841 15.0525 15.2841 14.4134C15.2841 13.7743 14.7731 13.2562 14.1428 13.2562C13.5125 13.2562 13.0015 13.7743 13.0015 14.4134C13.0015 15.0525 13.5125 15.5706 14.1428 15.5706ZM18.9477 14.4134C18.9477 15.0525 18.4367 15.5706 17.8064 15.5706C17.1761 15.5706 16.6651 15.0525 16.6651 14.4134C16.6651 13.7743 17.1761 13.2562 17.8064 13.2562C18.4367 13.2562 18.9477 13.7743 18.9477 14.4134ZM21.4701 15.5706C22.1004 15.5706 22.6114 15.0525 22.6114 14.4134C22.6114 13.7743 22.1004 13.2562 21.4701 13.2562C20.8398 13.2562 20.3288 13.7743 20.3288 14.4134C20.3288 15.0525 20.8398 15.5706 21.4701 15.5706ZM26.275 14.4134C26.275 15.0525 25.764 15.5706 25.1337 15.5706C24.5034 15.5706 23.9924 15.0525 23.9924 14.4134C23.9924 13.7743 24.5034 13.2562 25.1337 13.2562C25.764 13.2562 26.275 13.7743 26.275 14.4134ZM28.7971 15.5706C29.4274 15.5706 29.9383 15.0525 29.9383 14.4134C29.9383 13.7743 29.4274 13.2562 28.7971 13.2562C28.1667 13.2562 27.6558 13.7743 27.6558 14.4134C27.6558 15.0525 28.1667 15.5706 28.7971 15.5706ZM33.602 14.4134C33.602 15.0525 33.091 15.5706 32.4607 15.5706C31.8304 15.5706 31.3194 15.0525 31.3194 14.4134C31.3194 13.7743 31.8304 13.2562 32.4607 13.2562C33.091 13.2562 33.602 13.7743 33.602 14.4134ZM36.1244 15.5706C36.7547 15.5706 37.2657 15.0525 37.2657 14.4134C37.2657 13.7743 36.7547 13.2562 36.1244 13.2562C35.494 13.2562 34.9831 13.7743 34.9831 14.4134C34.9831 15.0525 35.494 15.5706 36.1244 15.5706ZM4.29341 19.3869C4.29341 20.026 3.78244 20.544 3.15213 20.544C2.52181 20.544 2.01084 20.026 2.01084 19.3869C2.01084 18.7478 2.52181 18.2297 3.15213 18.2297C3.78244 18.2297 4.29341 18.7478 4.29341 19.3869ZM6.81578 20.5441C7.4461 20.5441 7.95707 20.026 7.95707 19.387C7.95707 18.7479 7.4461 18.2298 6.81578 18.2298C6.18546 18.2298 5.67449 18.7479 5.67449 19.387C5.67449 20.026 6.18546 20.5441 6.81578 20.5441ZM11.6207 19.387C11.6207 20.026 11.1097 20.5441 10.4794 20.5441C9.84912 20.5441 9.33815 20.026 9.33815 19.387C9.33815 18.7479 9.84912 18.2298 10.4794 18.2298C11.1097 18.2298 11.6207 18.7479 11.6207 19.387ZM14.1428 20.5441C14.7731 20.5441 15.2841 20.026 15.2841 19.387C15.2841 18.7479 14.7731 18.2298 14.1428 18.2298C13.5125 18.2298 13.0015 18.7479 13.0015 19.387C13.0015 20.026 13.5125 20.5441 14.1428 20.5441ZM18.9477 19.387C18.9477 20.026 18.4367 20.5441 17.8064 20.5441C17.1761 20.5441 16.6651 20.026 16.6651 19.387C16.6651 18.7479 17.1761 18.2298 17.8064 18.2298C18.4367 18.2298 18.9477 18.7479 18.9477 19.387ZM21.4701 20.5441C22.1004 20.5441 22.6114 20.026 22.6114 19.387C22.6114 18.7479 22.1004 18.2298 21.4701 18.2298C20.8398 18.2298 20.3288 18.7479 20.3288 19.387C20.3288 20.026 20.8398 20.5441 21.4701 20.5441ZM26.275 19.387C26.275 20.026 25.764 20.5441 25.1337 20.5441C24.5034 20.5441 23.9924 20.026 23.9924 19.387C23.9924 18.7479 24.5034 18.2298 25.1337 18.2298C25.764 18.2298 26.275 18.7479 26.275 19.387ZM28.7971 20.5441C29.4274 20.5441 29.9383 20.026 29.9383 19.387C29.9383 18.7479 29.4274 18.2298 28.7971 18.2298C28.1667 18.2298 27.6558 18.7479 27.6558 19.387C27.6558 20.026 28.1667 20.5441 28.7971 20.5441ZM33.602 19.387C33.602 20.026 33.091 20.5441 32.4607 20.5441C31.8304 20.5441 31.3194 20.026 31.3194 19.387C31.3194 18.7479 31.8304 18.2298 32.4607 18.2298C33.091 18.2298 33.602 18.7479 33.602 19.387ZM36.1244 20.5441C36.7547 20.5441 37.2657 20.026 37.2657 19.387C37.2657 18.7479 36.7547 18.2298 36.1244 18.2298C35.494 18.2298 34.9831 18.7479 34.9831 19.387C34.9831 20.026 35.494 20.5441 36.1244 20.5441ZM4.29341 24.3602C4.29341 24.9993 3.78244 25.5174 3.15213 25.5174C2.52181 25.5174 2.01084 24.9993 2.01084 24.3602C2.01084 23.7212 2.52181 23.2031 3.15213 23.2031C3.78244 23.2031 4.29341 23.7212 4.29341 24.3602ZM6.81578 25.5174C7.4461 25.5174 7.95707 24.9993 7.95707 24.3602C7.95707 23.7211 7.4461 23.2031 6.81578 23.2031C6.18546 23.2031 5.67449 23.7211 5.67449 24.3602C5.67449 24.9993 6.18546 25.5174 6.81578 25.5174ZM11.6207 24.3602C11.6207 24.9993 11.1097 25.5174 10.4794 25.5174C9.84912 25.5174 9.33815 24.9993 9.33815 24.3602C9.33815 23.7211 9.84912 23.2031 10.4794 23.2031C11.1097 23.2031 11.6207 23.7211 11.6207 24.3602ZM14.1428 25.5174C14.7731 25.5174 15.2841 24.9993 15.2841 24.3602C15.2841 23.7211 14.7731 23.2031 14.1428 23.2031C13.5125 23.2031 13.0015 23.7211 13.0015 24.3602C13.0015 24.9993 13.5125 25.5174 14.1428 25.5174ZM18.9477 24.3602C18.9477 24.9993 18.4367 25.5174 17.8064 25.5174C17.1761 25.5174 16.6651 24.9993 16.6651 24.3602C16.6651 23.7211 17.1761 23.2031 17.8064 23.2031C18.4367 23.2031 18.9477 23.7211 18.9477 24.3602ZM21.4701 25.5174C22.1004 25.5174 22.6114 24.9993 22.6114 24.3602C22.6114 23.7211 22.1004 23.2031 21.4701 23.2031C20.8398 23.2031 20.3288 23.7211 20.3288 24.3602C20.3288 24.9993 20.8398 25.5174 21.4701 25.5174ZM26.275 24.3602C26.275 24.9993 25.764 25.5174 25.1337 25.5174C24.5034 25.5174 23.9924 24.9993 23.9924 24.3602C23.9924 23.7211 24.5034 23.2031 25.1337 23.2031C25.764 23.2031 26.275 23.7211 26.275 24.3602ZM28.7971 25.5174C29.4274 25.5174 29.9383 24.9993 29.9383 24.3602C29.9383 23.7211 29.4274 23.2031 28.7971 23.2031C28.1667 23.2031 27.6558 23.7211 27.6558 24.3602C27.6558 24.9993 28.1667 25.5174 28.7971 25.5174ZM33.602 24.3602C33.602 24.9993 33.091 25.5174 32.4607 25.5174C31.8304 25.5174 31.3194 24.9993 31.3194 24.3602C31.3194 23.7211 31.8304 23.2031 32.4607 23.2031C33.091 23.2031 33.602 23.7211 33.602 24.3602ZM36.1244 25.5174C36.7547 25.5174 37.2657 24.9993 37.2657 24.3602C37.2657 23.7211 36.7547 23.2031 36.1244 23.2031C35.494 23.2031 34.9831 23.7211 34.9831 24.3602C34.9831 24.9993 35.494 25.5174 36.1244 25.5174Z"
+                            fill="white"
+                        />
+                        <path d="M0.0351751 33.4173V37.2646H82.9428V33.4173H0.0351751Z" fill="white"/>
+                        <path d="M0 45.6368V41.8251H82.9165V45.6368H0Z" fill="white"/>
+                        <path d="M0.00879377 50.1884V54H82.9209V50.1884H0.00879377Z" fill="white"/>
+                        <path d="M43.727 20.5961V16.6775H82.9296V20.5961H43.727Z" fill="white"/>
+                        <path d="M83 28.9103V25.0095H43.727V28.9103H83Z" fill="white"/>
+                        <path d="M82.9824 0.0713283V3.87402H43.771V0.0713283H82.9824Z" fill="white"/>
+                        <path d="M82.9868 12.2551V8.41674H43.7622V12.2551H82.9868Z" fill="white"/>
+                    </svg>
+                    <h2 class="c-team__title-text">Celebrating the love of america</h2>
+                </div>
+                <div class="c-team__list js-team">
+                    <p>
+                        Led by a team of respected former military operators and competitive shooters,
+                        <span>
+                            PrairieFire
+                            embraces heroes of all kinds.
+                        </span>
+                    </p>
+                    <p>
+                        Guests will connect with their passions through
+                        <span>exclusive, authentic experiences</span>
+                        you
+                        won’t get anywhere else.
+                    </p>
+                    <p>
+                        <span>The PrairieFire community</span>
+                        is dedicated to
+                        <span>
+                            empowering individuals through adventure
+                            and personal discovery.
+                        </span>
+                    </p>
+                </div>
+                <a href="#" class="c-team__button btn btn-outline-light">meet our leaders</a>
+            </div>
+        </section>
+        <section class="c-members">
+            <div class="tabs-accordion-container c-members__container">
+                <!-- Tabs for desktop -->
+                <div class="tabs c-members__header" id="tabsMenu">
+                    <button class="c-members__title tab-link active" data-target="1">Membership</button>
+                    <button class="c-members__title tab-link" data-target="2">Groups</button>
+                    <button class="c-members__title tab-link" data-target="3">The Armory</button>
+                    <button class="c-members__title tab-link" data-target="4">Our team</button>
+                </div>
+                <div class="tab-content-container">
+                    <div class="c-members__accordion-item">
+                        <div class="c-members__accordion-item__title active">
+                            <button class="accordion-link" data-target="1">Membership</button>
+                            <span>
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="tab-content c-members__content active" id="content-1">
+                            <div class="c-members__content__inner">
+                                <p class="c-members__description" id="membership">
+                                    <span class="c-members__bold-description">PrairieFire fosters a strong sense of community.</span>
+                                    By providing opportunities for growth and support, we create a space where individuals can thrive and contribute to something larger than themselves. This is the heart of the American experience.
+                                </p>
+                                <a class="btn btn-outline-dark c-members__link" href="#">Unlock all benefits</a>
+                            </div>
+                            <div class="c-members__image-holder">
+                                <img class="c-members__image" src="assets/images/members.jpg" alt="c-members Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-members__accordion-item">
+                        <div class="c-members__accordion-item__title">
+                            <button class="accordion-link" data-target="2">Groups</button>
+                            <span>
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="tab-content c-members__content" id="content-2">
+                            <div class="c-members__content__inner">
+                                <p class="c-members__description" id="groups">
+                                    <span class="c-members__bold-description">PrairieFire empowers teams to reach their full potential.</span>
+                                    We design custom events and training programs that foster individual growth, strengthen teamwork, and develop strong leadership.
+                                </p>
+                                <a class="btn btn-outline-dark c-members__link" href="#" id="dynamic-button">Let's work together</a>
+                            </div>
+                            <div class="c-members__image-holder">
+                                <img class="c-members__image" src="assets/images/group.jpg" alt="c-members Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-members__accordion-item">
+                        <div class="c-members__accordion-item__title">
+                            <button class="accordion-link" data-target="3">The Armory</button>
+                            <span>
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="tab-content c-members__content" id="content-3">
+                            <div class="c-members__content__inner">
+                                <p class="c-members__description" id="armory">
+                                    <span class="c-members__bold-description">PrairieFire is equipped with top-tier firearms, ammunition, and safety gear.</span>
+                                    We offer an extensive inventory to cater to diverse needs and skill levels. Our commitment to quality ensures that every piece of equipment meets the highest standards for performance and safety.
+                                </p>
+                                <a class="btn btn-outline-dark c-members__link" href="#">Watch video</a>
+                            </div>
+                            <div class="c-members__image-holder">
+                                <img class="c-members__image" src="assets/images/armory.jpg" alt="c-members Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-members__accordion-item">
+                        <div class="c-members__accordion-item__title">
+                            <button class="accordion-link" data-target="4">Our team</button>
+                            <span>
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="tab-content c-members__content" id="content-4">
+                            <div class="c-members__content__inner">
+                                <p class="c-members__description" id="team">
+                                    <span class="c-members__bold-description">PrairieFire offers personalized training tailored to your goals.</span>
+                                    Our elite expert instructors create challenging experiences to boost your skills. We're dedicated to your growth and helping you become a better version of yourself.
+                                </p>
+                                <a class="btn btn-outline-dark c-members__link" href="#">Meet our leaders</a>
+                            </div>
+                            <div class="c-members__image-holder">
+                                <img class="c-members__image" src="assets/images/teamMembers.jpg" alt="c-members Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonal section -->
+        <section class="c-test">
+            <div class="testimonal-slider">
+                <div class="c-test__card">
+                    <div class="c-test__card-height">
+                        <div class="c-test__card__absolute-part">
+                            <figure class="mb-0">
+                                <img src="./assets/images/comma.png" alt="commas" class="c-test__card__comma">
+                            </figure>
+                            <span class="c-test__card__description">
+                                “Frank walked us through the procedures for the 1-Mile Shot
+                            seamlessly making us feel extremely safe and at ease to
+                            make a perfect shot...I felt a sense of proudness once
+                            I made it centimeters away from it, and I made the
+                            experience that much better.
+                            I cannot thank Frank and the entire PrairieFire team
+                            enough for such an amazing experience and we can’t
+                            wait to be back!”
+                            </span>
+                        </div>
+                        <figure class="mb-0 c-test__card__image-container">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="./assets/images/testmonial3.jpg">
+                                <source media="(max-width: 768px)" srcset="./assets/images/testmonial3.jpg">
+                                <img class="c-test__card__image" src="./assets/images/testmonial3.jpg" alt="testimonal image">
+                            </picture>
+                        </figure>
+                    </div>
+                </div>
+                <div class="c-test__card">
+                    <div class="c-test__card__absolute-part">
+                        <figure class="mb-0">
+                            <img src="./assets/images/comma.png" alt="commas" class="c-test__card__comma">
+                        </figure>
+                        <span class="c-test__card__description">
+                            “Frank walked us through the procedures for the 1-Mile Shot
+                        seamlessly making us feel extremely safe and at ease to
+                        make a perfect shot...I felt a sense of proudness once
+                        I made it centimeters away from it, and I made the
+                        experience that much better.
+                        I cannot thank Frank and the entire PrairieFire team
+                        enough for such an amazing experience and we can’t
+                        wait to be back!”
+                        </span>
+                    </div>
+                    <figure class="mb-0 c-test__card__image-container">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./assets/images/testmonial2.jpg">
+                            <source media="(max-width: 768px)" srcset="./assets/images/testmonial2.jpg">
+                            <img class="c-test__card__image" src="./assets/images/testmonial2.jpg" alt="testimonal image">
+                        </picture>
+                    </figure>
+                </div>
+                <div class="c-test__card">
+                    <div class="c-test__card__absolute-part">
+                        <figure class="mb-0">
+                            <img src="./assets/images/comma.png" alt="commas" class="c-test__card__comma">
+                        </figure>
+                        <span class="c-test__card__description">
+                            “Frank walked us through the procedures for the 1-Mile Shot
+                                seamlessly making us feel extremely safe and at ease to
+                                make a perfect shot...I felt a sense of proudness once
+                                I made it centimeters away from it, and I made the
+                                experience that much better.
+                                I cannot thank Frank and the entire PrairieFire team
+                                enough for such an amazing
+                        </span>
+                    </div>
+                    <figure class="mb-0 c-test__card__image-container">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./assets/images/testmonial1.jpg">
+                            <source media="(max-width: 768px)" srcset="./assets/images/testmonial1.jpg">
+                            <img class="c-test__card__image" src="./assets/images/testmonial1.jpg" alt="testimonal image">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+            <!-- profiles-->
+            <div class="c-test__custom">
+                <div class="c-test__profiles profile-slider">
+                    <div class="c-test__profiles__block">
+                        <figure class="c-test__profiles__block__content mb-0">
+                            <img src="./assets/images/profile1.png" alt="profile" class="c-test__profiles__block__content__image">
+                            <figcaption class="c-test__profiles__block__content__caption">
+                                <p class="c-test__profiles__block__content__caption__name">Dan Carter</p>
+                                <p class="c-test__profiles__block__content__caption__place">Nevada</p>
+                            </figcaption>
+                        </figure>
+                        <div class="active"></div>
+                    </div>
+                    <div class="c-test__profiles__block">
+                        <figure class="c-test__profiles__block__content mb-0">
+                            <img src="./assets/images/profile2.png" alt="profile" class="c-test__profiles__block__content__image">
+                            <figcaption class="c-test__profiles__block__content__caption">
+                                <p class="c-test__profiles__block__content__caption__name">Sarah Lee</p>
+                                <p class="c-test__profiles__block__content__caption__place">California</p>
+                            </figcaption>
+                        </figure>
+                        <div class="active"></div>
+                    </div>
+                    <div class="c-test__profiles__block">
+                        <figure class="c-test__profiles__block__content mb-0">
+                            <img src="./assets/images/profile3.png" alt="profile" class="c-test__profiles__block__content__image">
+                            <figcaption class="c-test__profiles__block__content__caption">
+                                <p class="c-test__profiles__block__content__caption__name">
+                                    Jessica Martinez
+                                </p>
+                                <p class="c-test__profiles__block__content__caption__place">Maryland</p>
+                            </figcaption>
+                        </figure>
+                        <div class="active"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news section -->
+        <section class="c-news">
+            <div class="container c-news__container">
+                <div class="c-news__head">
+                    <h2 class="c-news__main-heading">NEWS</h2>
+                </div>
+                <div class="c-news__cards news-cards">
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news1.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news2.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">PRAIRIEFIRE CELEBRATES A NEW ANNIVERSARY</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news3.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                </div>
+                <div class="c-news__explore">
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-dark "
+                    >Explore All News</a>
+                </div>
+            </div>
+        </section>
+        <!-- communtiy section -->
+        <section class="c-community">
+            <div class="c-community__heading-div">
+                <h3 class="c-community__heading">OUR COMMUNITY</h3>
+            </div>
+            <div class="c-community__images image-slider">
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-1.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-2.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-3.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-4.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-5.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-6.png" alt="link image" class="c-community__image">
+                </a>
+                <a class="c-community__image-link image-slider__item" href="#" target="_blank">
+                    <img src="./assets/images/comm-6.png" alt="link image" class="c-community__image">
+                </a>
+            </div>
+        </section>
+        <!-- services section -->
+        <section class="c-events-service">
+            <div class="container">
+                <div class="c-events-service__cards">
+                    <div class="c-events-service__events">
+                        <img class="c-events-service__events__image" src="./assets/images/calendar.svg" alt="calendar">
+                        <h5 class="c-events-service__events__heading">
+                            UPCOMING
+                            <br>
+                            COMPETITION AND EVENTS
+                        </h5>
+                        <a class="c-events-service__events__link" href="#" target="_blank">Read More</a>
+                    </div>
+                    <div class="c-events-service__events">
+                        <img class="c-events-service__events__image" src="./assets/images/security.svg" alt="calendar">
+                        <h5 class="c-events-service__events__heading">
+                            Your Safety
+                            <br>
+                            Is Our Priority
+                        </h5>
+                        <a class="c-events-service__events__link" href="#" target="_blank">Read More</a>
+                    </div>
+                    <div class="c-events-service__events">
+                        <img class="c-events-service__events__image" src="./assets/images/question.svg" alt="calendar">
+                        <h5 class="c-events-service__events__heading">
+                            FREQUENTLY
+                            <br>
+                            ASKED QUESTIONS
+                        </h5>
+                        <a class="c-events-service__events__link" href="#" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <footer>
+            <div class="c-footer">
+                <div class="container c-footer__container">
+                    <div class="c-footer__challange">
+                        <figure class="mb-0">
+                            <img src="./assets/images/PF logo.svg" alt="logo" class="c-footer__challange__logo">
+                        </figure>
+                        <div class="c-footer__challange__new">
+                            <span class="c-footer__challange__new__update">STAY UP TO DATE WITH US</span>
+                            <form class="c-footer__challange__new__in-width">
+                                <input class="c-footer__challange__new__in-width__input" type="email" placeholder="Email*">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="c-footer__wrap">
+                        <div class="c-footer__events">
+                            <div class="c-footer__join">
+                                <div class="c-footer__join__peragraph">
+                                    <strong>More challenges are coming in 2024.</strong>
+                                    <br>
+                                    <p class="c-footer__join__peragraph__experience mb-0">
+                                        We are building a portfolio of outdoor challenges that will be unmatched.
+                                        <br>
+                                        Our team has over 200 years of experience creating unique courses to challenge your skill set.
+                                    </p>
+                                </div>
+                                <div class="c-footer__join__links">
+                                    <span class="c-footer__join__links__heading">JOIN US</span>
+                                    <ul class="c-footer__join__links__bar">
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/youtube.svg" alt="youtube">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/linkedin.svg" alt="linkedin">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map c-footer__events__map--wrap">
+                                <p class="c-footer__events__map__heading">site map</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column ">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Shooting Challenges</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Competitions</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Executive Development</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="./events.html">Events</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Memberships</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">Useful links</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--desktop" href="#">Frequent Asked Questions</a>
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--tablet " href="#">FAQs</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Safety Considerations</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">PrairieFire Rules</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Careers</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Partnerships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">WHERE WE ARE</p>
+                                <ul class="c-footer__events__map__menu">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--width-set " href="#">1 PrairieFire Road, Pahrump, NV 89061</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__im-map">
+                                            <img src="./assets/images/Map.svg" alt="map.svg" class="map">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="c-footer__popup">
+                                    <button class="c-footer__popup__close popup-close">
+                                        <img src="./assets/images/close.png" alt="close" class="c-footer__popup__close-img">
+                                    </button>
+                                    <h4 class="c-footer__popup__heading">
+                                        We're closer
+                                        than you think!
+                                    </h4>
+                                    <p class="c-footer__popup__address">1 PrairieFire Road, Pahrump, NV 89061</p>
+                                    <a class="c-footer__popup__google" href="#">Go to Google Maps</a>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <div class="c-footer__events__map__hrs">
+                                    <p class="c-footer__events__map__heading">Working Hours</p>
+                                    <ul class="c-footer__events__map__menu c-footer__events__map__menu--con-hrs c-footer__events__map__menu--column">
+                                        <li class="c-footer__events__map__menu__contact">Monday-Friday:</li>
+                                        <li class="c-footer__events__map__menu__contact c-footer__events__map__menu__contact--margin">6am - 4pm</li>
+                                        <li class="c-footer__events__map__menu__contact">Saturday & Sunday</li>
+                                        <li class="c-footer__events__map__menu__contact">9am - 6pm</li>
+                                    </ul>
+                                </div>
+                                <div class="c-footer__events__map__contact">
+                                    <p class="c-footer__events__map__contact__heading">CONTACT US</p>
+                                    <ul class="c-footer__events__map__contact__menu">
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="tel:702-837-7433">702-837-7433</a>
+                                        </li>
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="mailto:Phello@prairiefire.com">Phello@prairiefire.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-footer__copyright">
+                <span class="c-footer__copyright__text">
+                    © 2024
+                    <strong> PrairieFire Nevada</strong>
+                    All Rights Reserved
+                </span>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

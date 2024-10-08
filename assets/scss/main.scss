@@ -1,0 +1,114 @@
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins/breakpoints";
+@import  "./variables";
+@import  "./fonts";
+@import  "./buttons";
+@import  "./common";
+@import  "./header";
+@import  "./footer";
+@import  "./homepage/banner";
+@import './homepage/challenges';
+@import './homepage/card';
+@import './homepage/s-slick';
+@import './homepage/explore';
+@import './homepage/team';
+@import './homepage/c-member';
+@import './homepage/s-members';
+@import './homepage/community';
+@import './homepage/c-events-service.scss';
+@import './homepage/news';
+@import './homepage/testimonal';
+@import './experience-page/course';
+@import './experience-page/banner';
+@import './experience-page/pagination';
+@import './experience-page/description';
+@import './experiences/experience-banner';
+@import './experiences/c-about';
+@import './experiences/experience-gallery';
+@import './experiences/experiences';
+@import './experiences/join';
+@import './experiences/c-help';
+@import './experiences/experience-card';
+@import './events/event-about';
+@import './events/event-experience';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::after {
+        box-sizing: border-box;
+    }
+
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn-book-now {
+    position: fixed;
+    bottom: 24px;
+    z-index: 1000;
+    display: block;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+
+    a {
+        width: 100%;
+    }
+
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes slide-in {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}

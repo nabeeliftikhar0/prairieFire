@@ -1,0 +1,66 @@
+$ns: experience;
+
+.#{$ns} {
+
+    &__img-holder {
+        figure {
+            position: relative;
+            margin: 0;
+
+            figcaption {
+                bottom: 0;
+                font-family: $font-family-base;
+                font-size: 16px;
+                font-weight: $font-weight-bold;
+                left: 50%;
+                line-height: 20.11px;
+                padding: 5px 12px;
+                position: absolute;
+                text-align: center;
+                transform: translateX(-50%);
+
+                &:first-of-type {
+                    display: none;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    &:first-of-type {
+                        align-items: center;
+                        bottom: 32px;
+                        display: flex;
+                        justify-content: space-between;
+                        left: 40px;
+                        padding: 5px 12px 5px 4px;
+                        transform: translateX(0);
+
+                        img {
+                            padding-right: 10px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        bottom: 32px;
+                        left: 270px;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn-div {
+        .event-btn {
+
+            @include media-breakpoint-up(xl) {
+                display: none;
+            }
+        }
+
+        .event-link {
+
+            @include media-breakpoint-up(xl) {
+                margin-right: 0;
+            }
+        }
+    }
+}

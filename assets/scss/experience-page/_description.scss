@@ -1,0 +1,84 @@
+$ns: "description";
+.#{$ns} {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $-experience-heading-text-background-color;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+    order: 1;
+
+    &--lrpad{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        order: unset;
+        padding-top: 55.5px;
+        padding-bottom: 55.5px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__textual {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+            margin: 0 -9px;
+        }
+
+        &__peragraph {
+            @include media-breakpoint-up(lg) {
+                padding-right: 32px;
+            }
+        }
+
+        &__perpadding {
+            @include media-breakpoint-up(lg) {
+                padding-right: 32px;
+
+                &:first-child {
+                    padding: 0;
+                }
+            }
+        }
+
+        &__heading {
+            color: $experience-text-heading-color;
+            font-family: Teko;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 54px;
+            margin-bottom: 0px;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 11px;
+                font-size: 48px;
+            }
+        }
+
+        &__description {
+            font-family: $font-family-base;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+
+            @include media-breakpoint-up(lg) {
+                max-width: 432px;
+            }
+        }
+
+        &__conmaxwidth {
+            max-width: unset;
+        }
+    }
+}

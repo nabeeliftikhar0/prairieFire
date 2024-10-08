@@ -1,0 +1,124 @@
+$ns: c-hero;
+
+.#{$ns} {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    &__container {
+        @include media-breakpoint-up(md) {
+            padding: 0;
+        }
+    }
+
+    &__video-mobile,
+    &__video-desktop {
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__video-mobile {
+        display: block;
+
+        @include media-breakpoint-up(sm) {
+            display: none;
+            align-items: flex-start;
+            padding-top: 60px;
+        }
+    }
+
+    &__video-desktop {
+        display: none;
+
+        @include media-breakpoint-up(sm) {
+            display: block;
+        }
+    }
+
+    &__text {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        padding: 0 12px;
+
+        @include media-breakpoint-up(sm) {
+            padding: 0 3px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            align-items: flex-start;
+            text-align: left;
+            padding: 120px 0 0 0;
+        }
+    }
+
+    &--text-left {
+        align-items: flex-start;
+        text-align: left;
+
+        @include media-breakpoint-down(xl) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &--text-center {
+        align-items: center;
+        text-align: center;
+
+        @include media-breakpoint-down(xl) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &--text-right {
+        align-items: flex-end;
+        text-align: right;
+
+        @include media-breakpoint-down(xl) {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-family: $heading-font-family;
+        font-size: 48px;
+        font-weight: $font-weight-bold;
+        line-height: 48px;
+        margin-bottom: 0;
+        max-width: 342px;
+        text-transform: uppercase;
+        z-index: 2;
+
+        @include media-breakpoint-up(sm) {
+            max-width: unset;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 90px;
+            line-height: 78px;
+            margin: 0;
+            max-width: 478px;
+        }
+    }
+
+    &__btn-container {
+        margin-top: 24px;
+        z-index: 2;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 32px;
+        }
+    }
+}

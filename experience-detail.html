@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Experience Detail</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/scss/_mixins.scss">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="c-header header-main">
+            <div class="container-fluid">
+                <div class="header-wrapper">
+                    <div class="header-wrapper__inner">
+                        <a href="index.html" class="navbar-brand">
+                            <img
+                                class="logo-img logo-light"
+                                src="assets/images/logo.png"
+                                alt="Logo"
+                                width="120"
+                            >
+                            <img
+                                class="logo-img logo-dark"
+                                src="assets/images/logo-dark.png"
+                                alt="Logo Dark"
+                                width="120"
+                                style="display: none;"
+                            >
+                        </a>
+                        <nav class="navbar navbar-expand-xl navbar-light">
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-controls="navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="navbar-wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="./experience.html"
+                                            >
+                                                <span>
+                                                    EXPERIENCES
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="#" class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    EXPERIENCES
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Gunslinger Challenges</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Courses</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Open Ranges</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    GROUPS
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    GROUPS
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Leadership Training</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Corporate Offsites</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./events.html">
+                                                <span>Events & Competitions</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    Community
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    Community
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Membership</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Our Leaders</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">News</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span>Campus</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mobile-options">
+                                        <a href="#" class="user-icon">
+                                            <span>
+                                                <img src="assets/images/user.svg" class="user-img img-fluid">
+                                            </span>
+                                            Login / Signup
+                                        </a>
+                                        <div class="search-wrapper">
+                                            <div class="search-bar">
+                                                <form action="#" method="get">
+                                                    <div class="input-field">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <span class="search-icon">
+                                                            <img src="assets/images/search.svg" class="img-fluid">
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-filled d-block">
+                                            <span>Book Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="header-right desktop-options">
+                            <div class="search-wrapper">
+                                <a href="#" class="btn btn-cta-light header-icons search-toggle">
+                                    <span>
+                                        <img src="assets/images/search.svg" class="search-img img-fluid" alt="Search Icon">
+                                    </span>
+                                </a>
+                                <!-- Hidden search form -->
+                                <div class="search-bar">
+                                    <form action="#" method="get">
+                                        <div class="input-field">
+                                            <input type="text" class="form-control">
+                                            <span class="search-icon">
+                                                <img src="assets/images/search-dark.svg" class="img-fluid">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a
+                                    href="#"
+                                    class="btn btn-cta-light header-icons"
+                                    id="userDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span>
+                                        <img src="assets/images/user.svg" class="user-img img-fluid" alt="User Icon">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-cta-light">
+                                <span>Book Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- banner -->
+        <section class="experience-banner" style="background-image: url(./assets/images/experiences/experiences-banner.png);">
+            <!-- <video autoplay="autoplay" loop="loop" muted class="c-hero__video-desktop">
+                <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="container">
+                <h1>Gunslinger Canyon</h1>
+            </div>
+        </section>
+        <!-- About Gunslinger Canyon -->
+        <section class="c-about">
+            <div class="container">
+                <div class="c-about__first-col">
+                    <div class="c-about__text-holder">
+                        <h2 class="c-about__heading">Gunslinger Canyon Is An Unforgettable Bucket List-Style Adventure!</h2>
+                    </div>
+                    <p class="c-about__quick-details-heading">Quick details</p>
+                    <div class="c-about__quick-details">
+                        <div class="c-about__alarm c-about__quick-detail">
+                            <img class="img-fluid" src="./assets/images/experiences/alarm.jpg" alt="alarm-icon">
+                            <p>2 hours</p>
+                        </div>
+                        <div class="c-about__flag c-about__quick-detail">
+                            <img class="img-fluid" src="./assets/images/experiences/flag_2.jpg" alt="alarm-icon">
+                            <a href="#">Desert Canyon</a>
+                        </div>
+                        <div class="c-about__chart c-about__quick-detail">
+                            <img class="img-fluid" src="./assets/images/experiences/bar_chart_4_bars.jpg" alt="alarm-icon">
+                            <p>Begginers</p>
+                        </div>
+                        <div class="c-about__coin c-about__quick-detail">
+                            <img class="img-fluid" src="./assets/images/experiences/coin.jpg" alt="alarm-icon">
+                            <p>$ 250</p>
+                        </div>
+                        <div class="c-about__text-holder--btn">
+                            <a href="#" class="btn btn-filled">Book now</a>
+                        </div>
+                    </div>
+                    <div class="c-about__info">
+                        <h3 class="c-about__info--heading">about this challange</h3>
+                        <div class="c-about__info__list">
+                            <ul>
+                                <li>
+                                    <strong>Nostalgic Wild West Experience:</strong>
+                                    Recreates the atmosphere of the Old West.
+                                </li>
+                                <li>
+                                    <strong>Adrenaline-Fueled Adventure:</strong>
+                                    High-speed chase through a desert canyon.
+                                </li>
+                                <li>
+                                    <strong>Quick Decision Making:</strong>
+                                    Participants must make split-second choices.
+                                </li>
+                                <li>
+                                    <strong>Skill Testing:</strong>
+                                    Challenges participants' shooting accuracy and instincts.
+                                </li>
+                                <li>
+                                    <strong>Suitable for All Levels:</strong>
+                                    Suitable for both experienced and novice shooters.
+                                </li>
+                                <li>
+                                    <strong>Unforgettable Experience:</strong>
+                                    A must-do adventure for those seeking excitement.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c-about__included">
+                        <h3 class="c-about__included--heading">What's included</h3>
+                        <div class="c-about__guns">
+                            <div class="c-about__gun">
+                                <div class="c-about__gun__img-holder">
+                                    <img src="./assets/images/experiences/2-staccato.jpg" alt="staccato gun">
+                                </div>
+                                <div class="c-about__gun__text-holder">
+                                    <p>
+                                        <span>
+                                            2 -Staccato XC
+                                        </span>
+                                        pistols chambered in 9mm, equipped with
+                                        <span>
+                                            Trijicon SRO
+                                        </span>
+                                        red dot sights
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="c-about__gun">
+                                <div class="c-about__gun__img-holder">
+                                    <img src="./assets/images/experiences/2-jp-enterprise.jpg" alt="staccato gun">
+                                </div>
+                                <div class="c-about__gun__text-holder">
+                                    <p>
+                                        <span>
+                                            2 -JP Enterprise Pistol Caliber Carbines chambered
+                                        </span>
+                                        in 9mm, equipped with Trijicon MRO optics
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="c-about__gun">
+                                <div class="c-about__gun__img-holder">
+                                    <img src="./assets/images/experiences/staccato-9mm.jpg" alt="staccato gun">
+                                </div>
+                                <div class="c-about__gun__text-holder">
+                                    <p>
+                                        <span>
+                                            150 rounds of 9mm
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-about__second-col">
+                    <p class="c-about__quick-details-heading-lg">Quick details</p>
+                    <div class="c-about__quick-details-lg">
+                        <div class="c-about__alarm-lg c-about__quick-detail-lg">
+                            <img class="img-fluid" src="./assets/images/experiences/alarm.jpg" alt="alarm-icon">
+                            <p>2 hours</p>
+                        </div>
+                        <div class="c-about__flag-lg c-about__quick-detail-lg">
+                            <img class="img-fluid" src="./assets/images/experiences/flag_2.jpg" alt="alarm-icon">
+                            <a href="#">Desert Canyon</a>
+                        </div>
+                        <div class="c-about__chart-lg c-about__quick-detail-lg">
+                            <img class="img-fluid" src="./assets/images/experiences/bar_chart_4_bars.jpg" alt="alarm-icon">
+                            <p>Beginners</p>
+                        </div>
+                        <div class="c-about__coin-lg c-about__quick-detail-lg">
+                            <img class="img-fluid" src="./assets/images/experiences/coin.jpg" alt="alarm-icon">
+                            <p>$ 250</p>
+                        </div>
+                    </div>
+                    <p class="c-about__quick-details-heading-lg">Real Time Calendar</p>
+                    <div class="c-about__text-holder--btn-lg">
+                        <a href="#" class="btn btn-filled">Book now</a>
+                    </div>
+                    <!-- calender widget area -->
+                </div>
+            </div>
+        </section>
+        <!-- experiences gallery slider images -->
+        <section class="experiences-gallery js-experiencesGallery">
+            <div>
+                <picture>
+                <source media="(max-width: 390px)" srcset="./assets/images/experiences/PDP-experiences-mobile.jpg" />
+                <source media="(min-width: 3901x)" srcset="./assets/images/experiences/PDP-experiences-desktop.jpg" />
+                <img src="./assets/images/experiences/PDP-experiences-desktop.jpg" />
+            </picture>
+                <!-- <video autoplay="autoplay" loop="loop" muted>
+                    <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 390px)" srcset="./assets/images/experiences/PDP-experiences-mobile.jpg">
+                    <source media="(min-width: 391px)" srcset="./assets/images/experiences/PDP-experiences-desktop.jpg">
+                    <img src="./assets/images/experiences/PDP-experiences-desktop.jpg">
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 390px)" srcset="./assets/images/experiences/PDP-experiences-mobile.jpg">
+                    <source media="(min-width: 391px)" srcset="./assets/images/experiences/PDP-experiences-desktop.jpg">
+                    <img src="./assets/images/experiences/PDP-experiences-desktop.jpg">
+                </picture>
+            </div>
+        </section>
+        <!-- experiences -->
+        <section class="experience">
+            <div class="container">
+                <div class="experience__title-holder">
+                    <h2 class="experience__title-holder--heading">RELATED EXPERIENCES</h2>
+                    <a href="#" class="experience__title-holder--link">
+                        explore all
+                        <img src="./assets/images/experiences/arrow_forward.jpg">
+                    </a>
+                </div>
+                <div class="experience__content js-experiencesSlider">
+                    <div class="experience__card">
+                        <h3 class="experience__nonHoveredtitle">1-Mile Shot</h3>
+                        <div class="experience__img-holder">
+                            <figure>
+                                <picture>
+                                    <source media="(max-width: 390px)" srcset="./assets/images/Expereinces-Thumb-Mobile.jpg">
+                                    <source media="(min-width: 3901x)" srcset="./assets/images/Component18.jpg">
+                                    <img class="img-fluid experience__img-holder__image" src="./assets/images/Component18.jpg">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="experience__text-holder">
+                            <h3 class="experience__text-holder__title">1-Mile Shot</h3>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/alarm_on.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">2 hours</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/bar_chart_4_bars.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">All levels</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/flag_2.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">Desert canyon</p>
+                            </div>
+                            <div class="experience__quick-detail experience__quick-detail--lg">
+                                <div>
+                                    <img src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description experience__quick-detail__description--lg">
+                                    <span>2 -Staccato XC pistols chambered in 9mm</span>
+                                    , equipped with Trijicon SRO red dot sights <br/>
+                                    <span>2 -JP Enterprise Pistol Caliber Carbines</span>
+                                    chambered in 9mm, equipped with Trijicon MRO optics <br/>
+                                    <span>150</span>
+                                    rounds of 9mm
+                                </p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">$ 250</p>
+                            </div>
+                        </div>
+                        <div class="experience__btn-div">
+                            <div class="experience__btn order-xxl-2">
+                                <a class="btn btn-outline-dark" href="#">Book Now</a>
+                            </div>
+                            <div class="experience__link order-xxl-1">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second card -->
+                    <div class="experience__card">
+                        <h3 class="experience__nonHoveredtitle">Freedom Night Shoot</h3>
+                        <div class="experience__img-holder">
+                            <figure>
+                                <picture>
+                                    <source media="(max-width: 390px)" srcset="./assets/images/event-card-8-m.png">
+                                    <source media="(min-width: 3901x)" srcset="./assets/images/event-card-8.png">
+                                    <img class="img-fluid experience__img-holder__image" src="./assets/images/event-card-8.png">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="experience__text-holder">
+                            <h3 class="experience__text-holder__title">Freedom Night Shoot</h3>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/alarm_on.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">2 hours</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/bar_chart_4_bars.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">All levels</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/flag_2.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">Desert canyon</p>
+                            </div>
+                            <div class="experience__quick-detail experience__quick-detail--lg">
+                                <div>
+                                    <img src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description experience__quick-detail__description--lg">
+                                    <span>2 -Staccato XC pistols chambered in 9mm</span>
+                                    , equipped with Trijicon SRO red dot sights <br/>
+                                    <span>2 -JP Enterprise Pistol Caliber Carbines</span>
+                                    chambered in 9mm, equipped with Trijicon MRO optics <br/>
+                                    <span>150</span>
+                                    rounds of 9mm
+                                </p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">$ 250</p>
+                            </div>
+                        </div>
+                        <div class="experience__btn-div">
+                            <div class="experience__btn order-xxl-2">
+                                <a class="btn btn-outline-dark" href="#">Book Now</a>
+                            </div>
+                            <div class="experience__link order-xxl-1">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd card -->
+                    <div class="experience__card">
+                        <h3 class="experience__nonHoveredtitle">Long Range Royalty​</h3>
+                        <div class="experience__img-holder">
+                            <figure>
+                                <picture>
+                                    <source media="(max-width: 390px)" srcset="./assets/images/event-card-7.png">
+                                    <source media="(min-width: 3901x)" srcset="./assets/images/event-card-7.png">
+                                    <img class="img-fluid experience__img-holder__image" src="./assets/images/event-card-7.png">
+                                </picture>
+                            </figure>
+                        </div>
+                        <div class="experience__text-holder">
+                            <h3 class="experience__text-holder__title">Long Range Royalty​</h3>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/alarm_on.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">2 hours</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/bar_chart_4_bars.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">All levels</p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/flag_2.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">Desert canyon</p>
+                            </div>
+                            <div class="experience__quick-detail experience__quick-detail--lg">
+                                <div>
+                                    <img src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description experience__quick-detail__description--lg">
+                                    <span>2 -Staccato XC pistols chambered in 9mm</span>
+                                    , equipped with Trijicon SRO red dot sights <br/>
+                                    <span>2 -JP Enterprise Pistol Caliber Carbines</span>
+                                    chambered in 9mm, equipped with Trijicon MRO optics <br/>
+                                    <span>150</span>
+                                    rounds of 9mm
+                                </p>
+                            </div>
+                            <div class="experience__quick-detail">
+                                <div>
+                                    <img class="img-fluid" src="./assets/images/experiences/experience/coin.svg" alt="alarm-icon">
+                                </div>
+                                <p class="experience__quick-detail__description">$ 250</p>
+                            </div>
+                        </div>
+                        <div class="experience__btn-div">
+                            <div class="experience__btn order-xxl-2">
+                                <a class="btn btn-outline-dark" href="#">Book Now</a>
+                            </div>
+                            <div class="experience__link order-xxl-1">
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="experience__explore-link">
+                    explore all
+                    <img src="./assets/images/experiences/arrow_forward.jpg">
+                </a>
+            </div>
+        </section>
+        <!-- join us -->
+        <section class="c-join" style="background-image: url(./assets/images/experiences/join-us.jpg);">
+            <!-- <video autoplay="autoplay" loop="loop" muted>
+                <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="container">
+                <div class="c-join__title-holder">
+                    <h2 class="c-join__title">
+                        Become a part of
+                        <br>
+                        our community
+                    </h2>
+                    <p class="c-join__description">membership feature benefits</p>
+                </div>
+                <ul class="c-join__list">
+                    <li>
+                        <span>special discount</span>
+                        on shooting experiences and courses
+                    </li>
+                    <li>
+                        <span>Free Passes Included </span>
+                        for your special guests
+                    </li>
+                    <li>
+                        <span>Free</span>
+                        public range and archery range use
+                    </li>
+                </ul>
+                <div class="c-join__btn">
+                    <a href="#" class="btn btn-outline-light">learn more</a>
+                </div>
+            </div>
+        </section>
+        <!-- help -->
+        <section class="c-help">
+            <div class="container">
+                <div class="c-help__text-holder">
+                    <h2 class="c-help__title">
+                        NEED HELP finding AN
+                        <br>
+                        EXPERIENCE THAT FITS
+                        <br>
+                        YOU?
+                    </h2>
+                </div>
+                <div class="c-help__btn">
+                    <a href="#" class="btn btn-outline-light">lests talk!</a>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <footer>
+            <div class="c-footer">
+                <div class="container c-footer__container">
+                    <div class="c-footer__challange">
+                        <figure class="mb-0">
+                            <img src="./assets/images/PF logo.svg" alt="logo" class="c-footer__challange__logo">
+                        </figure>
+                        <div class="c-footer__challange__new">
+                            <span class="c-footer__challange__new__update">STAY UP TO DATE WITH US</span>
+                            <form class="c-footer__challange__new__in-width">
+                                <input class="c-footer__challange__new__in-width__input" type="email" placeholder="Email*">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="c-footer__wrap">
+                        <div class="c-footer__events">
+                            <div class="c-footer__join">
+                                <div class="c-footer__join__peragraph">
+                                    <strong>More challenges are coming in 2024.</strong>
+                                    <br>
+                                    <p class="c-footer__join__peragraph__experience mb-0">
+                                        We are building a portfolio of outdoor challenges that will be unmatched.
+                                        <br>
+                                        Our team has over 200 years of experience creating unique courses to challenge your skill set.
+                                    </p>
+                                </div>
+                                <div class="c-footer__join__links">
+                                    <span class="c-footer__join__links__heading">JOIN US</span>
+                                    <ul class="c-footer__join__links__bar">
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/youtube.svg" alt="youtube">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/linkedin.svg" alt="linkedin">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map c-footer__events__map--wrap">
+                                <p class="c-footer__events__map__heading">site map</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column ">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Shooting Challenges</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Competitions</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Executive Development</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="./events.html">Events</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Memberships</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">Useful links</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--desktop" href="#">Frequent Asked Questions</a>
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--tablet " href="#">FAQs</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Safety Considerations</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">PrairieFire Rules</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Careers</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Partnerships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">WHERE WE ARE</p>
+                                <ul class="c-footer__events__map__menu">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--width-set " href="#">1 PrairieFire Road, Pahrump, NV 89061</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__im-map">
+                                            <img src="./assets/images/Map.svg" alt="map.svg" class="map">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="c-footer__popup">
+                                    <button class="c-footer__popup__close popup-close">
+                                        <img src="./assets/images/close.png" alt="close" class="c-footer__popup__close-img">
+                                    </button>
+                                    <h4 class="c-footer__popup__heading">
+                                        We're closer
+                                        than you think!
+                                    </h4>
+                                    <p class="c-footer__popup__address">1 PrairieFire Road, Pahrump, NV 89061</p>
+                                    <a class="c-footer__popup__google" href="#">Go to Google Maps</a>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <div class="c-footer__events__map__hrs">
+                                    <p class="c-footer__events__map__heading">Working Hours</p>
+                                    <ul class="c-footer__events__map__menu c-footer__events__map__menu--con-hrs c-footer__events__map__menu--column">
+                                        <li class="c-footer__events__map__menu__contact">Monday-Friday:</li>
+                                        <li class="c-footer__events__map__menu__contact c-footer__events__map__menu__contact--margin">6am - 4pm</li>
+                                        <li class="c-footer__events__map__menu__contact">Saturday & Sunday</li>
+                                        <li class="c-footer__events__map__menu__contact">9am - 6pm</li>
+                                    </ul>
+                                </div>
+                                <div class="c-footer__events__map__contact">
+                                    <p class="c-footer__events__map__contact__heading">CONTACT US</p>
+                                    <ul class="c-footer__events__map__contact__menu">
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="tel:702-837-7433">702-837-7433</a>
+                                        </li>
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="mailto:Phello@prairiefire.com">Phello@prairiefire.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-footer__copyright">
+                <span class="c-footer__copyright__text">
+                    © 2024
+                    <strong> PrairieFire Nevada</strong>
+                    All Rights Reserved
+                </span>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/pdp.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

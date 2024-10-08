@@ -1,0 +1,106 @@
+$ns: "c-events-service";
+.#{$ns} {
+    &__cards {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 64px;
+        padding-top: 64px;
+
+        @include media-breakpoint-up(sm) {
+            flex-direction: row;
+            padding-bottom: 56px;
+            padding-top: 56px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 80px;
+            padding-top: 80px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding-bottom: 96px;
+            padding-top: 96px;
+        }
+    }
+
+    &__events {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+        max-width: 100%;
+        flex: 0 0 100%;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            margin-right: 20px;
+            margin-bottom: 0;
+            max-width: calc(33.33% - 12px);
+            flex: 0 0 calc(33.33% - 12px);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            width: 462px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__image {
+            height: 80px;
+            max-width: 100%;
+            width: 80px;
+
+            @include media-breakpoint-up(sm) {
+                height: 71px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 80px;
+                width: 100px;
+            }
+        }
+
+        &__heading {
+            color: $community-card-text-color;
+            font-size: 20px;
+            margin-bottom: 23px;
+            margin-top: 23px;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 28px;
+                margin-bottom: 32px;
+                margin-top: 32px;
+            }
+        }
+
+        &__link {
+            color: $community-card-text-color;
+            font-size: $font-size-base;
+            font-weight: $font-weight-bold;
+            line-height: 24px;
+            text-decoration: underline;
+
+            &:hover {
+                color: $community-card-hover-text-color;
+            }
+        }
+
+        &:nth-last-child(1) h5 {
+            max-width: unset;
+
+            @include media-breakpoint-up(sm) {
+                max-width: 210px;
+            }
+        }
+    }
+}

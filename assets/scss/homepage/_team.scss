@@ -1,0 +1,153 @@
+$ns: c-team;
+
+.#{$ns} {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 92px 20px 97px;
+    position: relative;
+
+    @include media-breakpoint-up(sm) {
+        padding: 56px 40px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 80px 0;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 120px 0;
+    }
+
+    &__container {
+        padding: 0 !important;
+    }
+
+    &__title {
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        @include media-breakpoint-up(sm) {
+            gap: 32px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            align-items: baseline;
+            flex-direction: row;
+            gap: 44px;
+            margin-bottom: 12px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            color: $white;
+            font-family: $heading-font-family;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 48px;
+                line-height: 48px;
+                margin-bottom: 28px;
+                max-width: 325px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 64px;
+                line-height: 64px;
+                margin-bottom: 0;
+                max-width: 100%;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 88px;
+                line-height: 82px;
+                letter-spacing: 3px;
+            }
+        }
+    }
+
+    &__list {
+        margin-bottom: 0;
+        padding: 0;
+
+        ul {
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        >*:not(ul),
+        >ul li:not(.slick-dots li) {
+            color: $white;
+            font-family: $font-family-base;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            list-style: none;
+            margin-bottom: 0;
+            max-width: 770px;
+            padding: 0 !important;
+            position: relative;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 16px;
+                line-height: 21.85px;
+                padding-left: 29px !important;
+                max-width: 491px;
+
+                &::before {
+                    content: "★";
+                    position: absolute;
+                    font-size: 15px;
+                    left: 0;
+                }
+            }
+
+            @include media-breakpoint-up(sm) {
+                font-size: 20px;
+                line-height: 28px;
+                max-width: 610px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 24px;
+                line-height: 36px;
+                max-width: 740px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 46px;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: 45px;
+            width: unset;
+            max-height: 50px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 30px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 37px;
+        }
+    }
+}

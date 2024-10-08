@@ -1,0 +1,113 @@
+// Colors
+$primary-color: #0B2B35;
+$secondary-color: #92201E;
+$primary-color-80: #35444D;
+$black: #000;
+$white: #fff;
+$white-2: #F8F8F8;
+$white-3:#CFCFCF;
+$white-4: #ebebeb;
+$white-5:#E4E4E4;
+$white6: rgba(235, 235, 235, 1);
+$transparent-white: #ffffff00;
+$text-color: #3A3A3A;
+$grey-100: #5C626B;
+$grey-200: #848A91;
+$grey-300: #999;
+$dark-black:#00000029;
+$deep-sea-whisper:#0B2B35CC;
+$link-color: $primary-color;
+$dark-red:#2C0A09;
+$red-border: #A44B38;
+$grey-400: rgba(132, 138, 145, 1);
+
+
+// Typography
+$font-family-base: "Source Sans Pro";
+$heading-font-family: "Teko", sans-serif;
+$font-size-base: 18px;
+$font-size-lg: 20px;
+$font-size-sm: 16px;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// testimony section
+$testimony-text-color:$white;
+$testimony-slick-color:$white;
+$testimony-slick-active-color:$white;
+
+// news section colors
+$news-main-heaidng-color:$secondary-color;
+$news-card-heaidng-color:$secondary-color;
+$news-card-read-color:$secondary-color;
+$explore-button-color:$primary-color-80;
+$explore-button-text-color:$primary-color-80;
+$explore-button-hover-color:$primary-color-80;
+$news-card-para-color: $primary-color-80;
+$explore-button-hover-text-color:$white;
+$slider-border-color:$secondary-color;
+$slider-active-color:$secondary-color;
+
+// community colors
+$community-heading-color:$primary-color;
+$community-card-text-color:$grey-100;
+$community-card-hover-text-color:$grey-100;
+
+
+// footer colors
+$footer-content-background:$primary-color;
+$footer-text-color:$white;
+$footer-text-hover-color:$primary-color;
+$copyright-background:$secondary-color;
+$footer-popup-background-color:$white;
+$footer-popup-goggle-map-link-color:$secondary-color;
+$footer-box-shadow-color:#0b2b3580;
+$footer-popup-heading-color:$primary-color;
+
+// experience-colors
+$experience-background-one:$secondary-color;
+$expereince-background-two:$dark-red;
+$experience-talk-heading-color:$white;
+$experience-text-heading-color:$secondary-color;
+$-experience-heading-text-background-color:$white-2;
+$experience-filter-border-colors:$white-3;
+$experience-filter-hover-bg:$secondary-color;
+$exp-clear-color:$grey-400;
+$experience-dropdwon-border:$grey-200;
+$experience-clear-footer-disabled:$grey-200;
+$experience-clear-footer-default:$secondary-color;
+$expereince-filter-mobile:$white;
+$experience-filter-mobile-heading:$primary-color;
+$expe-mobile-link:$white-4;
+$expe-filtyer-radio: $secondary-color;
+$exp-mobile-filter-border:$white-5;
+$exp-icon-text:$primary-color;
+$-exp-slider-card-title:$white;
+$-exp-slider-card-properties:$white;
+$exp-card-leran:$primary-color;
+$-exp-pagination-border:$white6;
+$-exp-pagination-text-hover:$white;
+$-exp-pagination-bg:$secondary-color;
+$exp-card-included-mobile:$primary-color;
+$exp-links-filter-mobile:$primary-color;
+$banner-color:$white;
+$label-filter-color:$primary-color;
+
+// plp-events-color
+$plp-cards-date:$white;
+$plp-cards-cdate:$primary-color;
+$plp-cards-ctime:$secondary-color;
+$plp-cards-ctimetext:$white;
+
+// Override Bootstrap grid breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 768px,
+    md: 1024px,
+    lg: 1200px,
+    xl: 1440px,
+    xxl: 1600px
+);

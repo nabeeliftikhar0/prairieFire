@@ -1,0 +1,39 @@
+$ns: "exppagination";
+.#{$ns} {
+    display: none;
+    @include media-breakpoint-up(lg) {
+        display: block;
+        margin-top: 32px;
+    }
+
+    &__paglist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+
+        &:not(:first-child):not(:last-child) {
+            a {
+                border: 1px solid $-exp-pagination-border;
+
+                &:hover {
+                    background-color: $-exp-pagination-bg;
+                    color: $-exp-pagination-text-hover;
+                    text-decoration: none;
+                    border-color: $-exp-pagination-bg;
+                }
+            }
+        }
+    }
+    &__pagitem {
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+}
+

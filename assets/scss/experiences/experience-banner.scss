@@ -1,0 +1,47 @@
+$ns: experience-banner;
+
+.#{$ns} {
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+
+    @include media-breakpoint-up(lg) {
+        height: 360px;
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        width: 100%;
+        height: 300px;
+
+        @include media-breakpoint-up(lg) {
+            height: 360px;
+        }
+    }
+
+    h1 {
+        color: $white;
+        font-family: $heading-font-family;
+        font-size: 40px;
+        font-weight: $font-weight-bold;
+        line-height: 40px;
+        padding: 80px 12px 0;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 64px;
+            line-height: 64px;
+            padding-top: 120px;
+        }
+    }
+}

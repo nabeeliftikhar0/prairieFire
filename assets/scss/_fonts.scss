@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Light.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Black.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Semibold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Base Typography
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    color: $text-color;
+    font-weight: $font-weight-normal;
+    line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font-family;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 52px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+p {
+    font-size: $font-size-base;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

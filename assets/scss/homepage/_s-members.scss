@@ -1,0 +1,70 @@
+$ns: s-members;
+
+.#{$ns} {
+    padding: 40px 20px;
+
+    &:last-child {
+        border-bottom: 1px solid #848A91;
+    }
+
+    .accordion-item {
+        border: none;
+
+        &:last-of-type {
+            border-bottom: 1px solid #848A91;
+        }
+    }
+
+    .accordion-button {
+        background: $white;
+        border-top: 1px solid #92201E;
+        box-shadow: none;
+        color: #92201E;
+        font-family: Teko;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        padding: 24px 0px 24px 0px;
+        text-align: left;
+
+        &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2392201E'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            height: 24px;
+        }
+    }
+
+    .accordion-button.collapsed {
+        border-top: 1px solid #848A91;
+        color: #848A91;
+
+        &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23848A91'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            height: 24px;
+        }
+    }
+
+    .accordion-body {
+        padding: 0;
+
+        img {
+            margin-bottom: 23px;
+        }
+
+        p {
+            font-family: 'Source Sans Pro';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+
+    &__bold-description {
+        font-weight: 700;
+    }
+
+    &__link {
+        min-width: 100%;
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,344 @@
+$ns: "c-test";
+.#{$ns} {
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+
+    @include media-breakpoint-up(sm) {
+        height: auto;
+    }
+
+    .slick-slider {
+        height: 100%;
+        @include media-breakpoint-up(sm) {
+            height: auto;
+        }
+
+        .slick-list {
+            height: 100%;
+
+            .slick-track {
+                height: 100%;
+            }
+        }
+    }
+
+    &__card {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-blend-mode: multiply;
+            background: linear-gradient(180deg, rgba(53, 68, 77, 0.1) 19.3%, #35444d 40.35%, #0b2b35 46.02%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.2) 54.62%, rgba(0, 0, 0, 0) 82%);
+            pointer-events: none;
+
+            @include media-breakpoint-up(sm) {
+                // opacity: 87%;
+                background-blend-mode: multiply;
+                background: linear-gradient(270deg, rgba(53, 68, 77, 0.1) 20.9%, #35444d 65.52%, #0b2b35 100%);
+            }
+        }
+
+        &__image-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-top: 70%;
+            aspect-ratio: 16 / 9;
+
+            @include media-breakpoint-up(sm) {
+                padding-top: 0;
+                aspect-ratio: 16 / 9.9;
+            }
+
+            @include media-breakpoint-up(md) {
+                aspect-ratio: 16 / 6.5;
+            }
+
+            @include media-breakpoint-up(lg) {
+                aspect-ratio: 16 / 7;
+            }
+
+            @media (min-width : 1600px) and (max-width:1800px) {
+                aspect-ratio: 16/7;
+            }
+
+            @media (min-width : 1800px){
+                aspect-ratio: 16/6;
+            }
+        }
+
+        &__image {
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            object-position: center;
+            transform: translate(-50%, -50%);
+        }
+
+        &__absolute-part {
+            position: absolute;
+            z-index: 999;
+            left: 20px;
+            right: 20px;
+            top: 133px;
+
+            @include media-breakpoint-up(sm) {
+                right: 0;
+                max-width: 63%;
+                left: 42px;
+                top: -39px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                max-width: 50%;
+                top: -55.72px;
+                left: 81px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                left: 242px;
+            }
+        }
+
+        &__comma {
+            opacity: 70%;
+
+            @include media-breakpoint-up(sm) {
+                height: 141px;
+                width: 160px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 174.68px;
+                width: 199.7px;
+            }
+        }
+
+        &__description {
+            display: block;
+            margin-top: 9px;
+            font-size: 18px;
+            color: $testimony-text-color;
+            line-height: 24px;
+            font-family: "Source Sans Pro";
+
+            @include media-breakpoint-up(sm) {
+                margin-top: 22px;
+                line-height: 28px;
+                font-weight: $font-weight-semibold;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 20px;
+                margin-top: 37px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                line-height: 42px;
+                font-size: 32px;
+                margin-top: 59px;
+            }
+        }
+    }
+
+    &__custom {
+        position: absolute;
+        z-index: 999;
+        bottom: 81px;
+        left: 20px;
+        max-width: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        @include media-breakpoint-up(sm) {
+            left: 42px;
+            bottom: 37px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            bottom: 80px;
+            left: 81px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            bottom: 83px;
+            left: 242px;
+        }
+
+        .slick-track {
+            @include media-breakpoint-up(lg) {
+                transform: none !important;
+                transition: none !important;
+            }
+        }
+    }
+
+    &__profiles {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        white-space: nowrap;
+        justify-content: space-between;
+
+        @include media-breakpoint-up(lg) {
+            justify-content: unset;
+        }
+
+        .slick-list {
+            width: 100%;
+        }
+
+        &__block {
+            max-width: 69%;
+            flex: 0 0 25%;
+            margin-right: -7px;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+
+            @include media-breakpoint-up(sm) {
+                max-width: unset;
+                flex: unset;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-right: 50px;
+            }
+
+            &.slick-current {
+                > figure {
+                    opacity: 100%;
+                }
+                .active {
+                    opacity: 1;
+
+                    @include media-breakpoint-up(lg) {
+                        background-image: url("data:image/svg+xml,%3Csvg width='285' height='18' viewBox='0 0 285 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3471_16797)'%3E%3Cpath d='M1.85978 17.7182H0V0.718201H1.85978V17.7182Z' fill='white'/%3E%3Cpath d='M10.0773 9.15898H9.14746V0.71827H10.0773V9.15898ZM18.9221 9.15898H17.9922V0.71827H18.9221V9.15898ZM27.7669 9.15898H26.837V0.71827H27.7669V9.15898ZM36.6116 9.15898H35.6817V0.71827H36.6116V9.15898ZM45.4564 9.15898H44.5265V0.71827H45.4564V9.15898ZM54.3011 9.15898H53.3712V0.71827H54.3011V9.15898ZM63.1459 9.15898H62.216V0.71827H63.1459V9.15898ZM71.9906 9.15898H71.0607V0.71827H71.9906V9.15898ZM80.8354 9.15898H79.9055V0.71827H80.8354V9.15898ZM89.6801 9.15898H88.7502V0.71827H89.6801V9.15898ZM98.5249 9.15898H97.595V0.71827H98.5249V9.15898ZM107.37 9.15898H106.44V0.71827H107.37V9.15898ZM116.214 9.15898H115.285V0.71827H116.214V9.15898ZM125.059 9.15898H124.129V0.71827H125.059V9.15898ZM133.904 9.15898H132.974V0.71827H133.904V9.15898Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.94824 9.35765H10.2767V0.519577H8.94824V9.35765ZM9.34681 8.96029V0.916941H9.87813V8.96029H9.34681ZM17.793 9.35765H19.1215V0.519577H17.793V9.35765ZM18.1916 8.96029V0.916941H18.7229V8.96029H18.1916ZM26.6378 9.35765H27.9662V0.519577H26.6378V9.35765ZM27.0363 8.96029V0.916941H27.5676V8.96029H27.0363ZM35.4825 9.35765H36.811V0.519577H35.4825V9.35765ZM35.8811 8.96029V0.916941H36.4124V8.96029H35.8811ZM44.3273 9.35765H45.6557V0.519577H44.3273V9.35765ZM44.7258 8.96029V0.916941H45.2571V8.96029H44.7258ZM53.172 9.35765H54.5005V0.519577H53.172V9.35765ZM53.5706 8.96029V0.916941H54.1019V8.96029H53.5706ZM62.0168 9.35765H63.3452V0.519577H62.0168V9.35765ZM62.4153 8.96029V0.916941H62.9467V8.96029H62.4153ZM70.8615 9.35765H72.19V0.519577H70.8615V9.35765ZM71.2601 8.96029V0.916941H71.7914V8.96029H71.2601ZM79.7063 9.35765H81.0347V0.519577H79.7063V9.35765ZM80.1048 8.96029V0.916941H80.6362V8.96029H80.1048ZM88.551 9.35765H89.8795V0.519577H88.551V9.35765ZM88.9496 8.96029V0.916941H89.4809V8.96029H88.9496ZM97.3958 9.35765H98.7242V0.519577H97.3958V9.35765ZM97.7943 8.96029V0.916941H98.3257V8.96029H97.7943ZM106.241 9.35765H107.569V0.519577H106.241V9.35765ZM106.639 8.96029V0.916941H107.17V8.96029H106.639ZM115.085 9.35765H116.414V0.519577H115.085V9.35765ZM115.484 8.96029V0.916941H116.015V8.96029H115.484ZM123.93 9.35765H125.259V0.519577H123.93V9.35765ZM124.329 8.96029V0.916941H124.86V8.96029H124.329ZM132.775 9.35765H134.103V0.519577H132.775V9.35765ZM133.173 8.96029V0.916941H133.705V8.96029H133.173Z' fill='white'/%3E%3Cpath d='M143.43 17.7182H141.57V0.718201H143.43V17.7182Z' fill='white'/%3E%3Cpath d='M152.015 9.15898H151.085V0.71827H152.015V9.15898ZM160.86 9.15898H159.93V0.71827H160.86V9.15898ZM169.704 9.15898H168.774V0.71827H169.704V9.15898ZM178.549 9.15898H177.619V0.71827H178.549V9.15898ZM187.394 9.15898H186.464V0.71827H187.394V9.15898ZM196.239 9.15898H195.309V0.71827H196.239V9.15898ZM205.083 9.15898H204.153V0.71827H205.083V9.15898ZM213.928 9.15898H212.998V0.71827H213.928V9.15898ZM222.773 9.15898H221.843V0.71827H222.773V9.15898ZM231.618 9.15898H230.688V0.71827H231.618V9.15898ZM240.462 9.15898H239.532V0.71827H240.462V9.15898ZM249.307 9.15898H248.377V0.71827H249.307V9.15898ZM258.152 9.15898H257.222V0.71827H258.152V9.15898ZM266.997 9.15898H266.067V0.71827H266.997V9.15898ZM275.841 9.15898H274.912V0.71827H275.841V9.15898Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M150.886 9.35765H152.214V0.519577H150.886V9.35765ZM151.284 8.96029V0.916941H151.816V8.96029H151.284ZM159.731 9.35765H161.059V0.519577H159.731V9.35765ZM160.129 8.96029V0.916941H160.66V8.96029H160.129ZM168.575 9.35765H169.904V0.519577H168.575V9.35765ZM168.974 8.96029V0.916941H169.505V8.96029H168.974ZM177.42 9.35765H178.748V0.519577H177.42V9.35765ZM177.819 8.96029V0.916941H178.35V8.96029H177.819ZM186.265 9.35765H187.593V0.519577H186.265V9.35765ZM186.663 8.96029V0.916941H187.195V8.96029H186.663ZM195.11 9.35765H196.438V0.519577H195.11V9.35765ZM195.508 8.96029V0.916941H196.039V8.96029H195.508ZM203.954 9.35765H205.283V0.519577H203.954V9.35765ZM204.353 8.96029V0.916941H204.884V8.96029H204.353ZM212.799 9.35765H214.127V0.519577H212.799V9.35765ZM213.198 8.96029V0.916941H213.729V8.96029H213.198ZM221.644 9.35765H222.972V0.519577H221.644V9.35765ZM222.042 8.96029V0.916941H222.574V8.96029H222.042ZM230.489 9.35765H231.817V0.519577H230.489V9.35765ZM230.887 8.96029V0.916941H231.418V8.96029H230.887ZM239.333 9.35765H240.662V0.519577H239.333V9.35765ZM239.732 8.96029V0.916941H240.263V8.96029H239.732ZM248.178 9.35765H249.506V0.519577H248.178V9.35765ZM248.577 8.96029V0.916941H249.108V8.96029H248.577ZM257.023 9.35765H258.351V0.519577H257.023V9.35765ZM257.421 8.96029V0.916941H257.953V8.96029H257.421ZM265.868 9.35765H267.196V0.519577H265.868V9.35765ZM266.266 8.96029V0.916941H266.797V8.96029H266.266ZM274.712 9.35765H276.041V0.519577H274.712V9.35765ZM275.111 8.96029V0.916941H275.642V8.96029H275.111Z' fill='white'/%3E%3Cpath d='M284.999 17.7182H283.14V0.718201H284.999V17.7182Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3471_16797'%3E%3Crect width='285' height='17' fill='white' transform='matrix(1 0 0 -1 0 17.7182)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+                        height: 17px !important;
+                        width: 100%;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        margin-top: 16px;
+                    }
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &__content {
+                display: flex;
+                align-items: center;
+                opacity: 50%;
+
+                &__image {
+                    width: 73px;
+                    max-width: 100%;
+                    object-fit: cover;
+
+                    @include media-breakpoint-up(sm) {
+                        width: 73px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        width: 95px;
+                        height: auto;
+                    }
+                }
+
+                &__caption {
+                    margin-left: 24px;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-left: 32px;
+                    }
+
+                    &__name {
+                        margin: 0;
+                        color: $testimony-text-color;
+                        font-weight: $font-weight-semibold;
+                        font-size: 20px;
+
+                        @include media-breakpoint-up(sm) {
+                            line-height: 24px;
+                            font-size: 20px;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            line-height: 32px;
+                            font-size: 24px;
+                        }
+                    }
+
+                    &__place {
+                        font-size: 18px;
+                        color: $testimony-text-color;
+                        margin-bottom: 0;
+                        line-height: 24px;
+
+                        @include media-breakpoint-up(sm) {
+                            font-size: 18px;
+                        }
+                        @include media-breakpoint-up(lg) {
+                            font-weight: $font-weight-semibold;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slide {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        @include media-breakpoint-down(md) {
+            flex: 0 0 33.33% !important;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 0px;
+        padding: 0;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(20%);
+        display: flex;
+        list-style: none;
+        bottom: 40px;
+        z-index: 999;
+
+        > li {
+            margin-right: 12px;
+
+            > button {
+                color: transparent;
+                border-radius: 50%;
+                border: 2px solid $testimony-slick-color;
+                width: 14px;
+                height: 14px;
+                background-color: transparent;
+            }
+        }
+
+        .slick-active {
+            > button {
+                background-color: $testimony-slick-active-color;
+            }
+        }
+    }
+}

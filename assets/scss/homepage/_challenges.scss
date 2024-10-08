@@ -1,0 +1,191 @@
+$ns: c-challenges;
+
+.#{$ns} {
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out, color 0.5s ease-in-out;
+
+    @include media-breakpoint-down(sm) {
+        background-image: unset !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 80px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 96px;
+        padding-top: 96px;
+        position: relative;
+        width: 100%;
+        transition: background-image 1s ease, opacity 1s ease;
+    }
+
+    .container {
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 0;
+        }
+    }
+
+    &__header {
+        align-items: center;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(sm) {
+            background: transparent;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 147px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 155px;
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        font-family: $heading-font-family;
+        font-size: 40px;
+        font-weight: $font-weight-bold;
+        line-height: 40px;
+        margin-bottom: 0;
+        max-width: 390px;
+        padding: 32px 20px 4px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: color 0.5s ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 48px;
+            line-height: 48px;
+            max-width: 560px;
+            padding: 56px 0 5px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 64px;
+            line-height: 64px;
+            padding: 56px 0 5px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 80px 0 5px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 80px;
+            line-height: 72px;
+            max-width: 686px;
+            padding: 0;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__description {
+        display: none;
+        font-size: 24px;
+        font-weight: $font-weight-semibold;
+        line-height: 30.17px;
+        text-align: center;
+        transition: color 0.5s ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+            display: block;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__link {
+        color: $black;
+        font-family: 'Source Sans Pro';
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        line-height: 24px;
+        padding-bottom: 28px;
+        text-align: center;
+        text-decoration: underline;
+
+        &:hover {
+            color: $black;
+        }
+
+        @include media-breakpoint-up(sm) {
+            display: none;
+        }
+    }
+
+    &__content {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        height: 100%;
+        padding-top: 0;
+        position: relative;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+            background-image: unset !important;
+            // display: flex;
+            // justify-content: center;
+        }
+    }
+
+    &__cards {
+        height: 330px;
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: unset;
+        }
+    }
+
+    &__card {
+        padding: 0 20px;
+
+        @include media-breakpoint-up(sm) {
+            background: none !important;
+        }
+
+        &:first-child {
+            @include media-breakpoint-up(lg) {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child {
+            @include media-breakpoint-up(lg) {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__btn {
+        padding-top: 77px;
+        text-align: center;
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+            padding-top: 32px;
+        }
+    }
+}

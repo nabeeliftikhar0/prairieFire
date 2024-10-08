@@ -1,0 +1,191 @@
+$ns: "c-about";
+
+.#{$ns} {
+    .event-detail-one {
+        flex: 0 0 70%;
+
+        @include media-breakpoint-up(md) {
+            flex: 0 0 100%;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 60%;
+        }
+    }
+
+    .event-detail-two {
+        flex: 0 0 30%;
+
+        @include media-breakpoint-up(md) {
+            flex: 0 0 100%;
+            margin-top: 12px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            flex: 0 0 40%;
+            margin-top: 0;
+        }
+    }
+
+    .event-detail-three {
+        flex: 0 0 100%;
+        padding-bottom: 30px;
+
+        a {
+            padding-left: 9px;
+        }
+    }
+
+    &__spectators {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        &--heading {
+            border-top: 1px solid $border-color;
+            color: $primary-color-80;
+            font-family: $font-family-base;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            margin: 0;
+            padding: 24px 0;
+        }
+    }
+
+    &__general-admission {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:nth-of-type(1) {
+            margin-bottom: 12px;
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 24px;
+        }
+
+        &:nth-of-type(3) {
+            margin-bottom: 0;
+        }
+
+        &:nth-of-type(n + 4) {
+            margin-bottom: 12px;
+        }
+
+        &--text {
+            color: $grey-100;
+            font-family: $font-family-base;
+            font-size: 18px;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+            margin: 0;
+            text-align: left;
+        }
+
+        a {
+            width: 161px;
+        }
+    }
+
+    &__recharge {
+        border: 1px solid $red-border;
+        padding: 32px 20px;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        &__text-holder {
+            &--title {
+                color: $primary-color-80;
+                font-family: $font-family-base;
+                font-size: 20px;
+                font-weight: $font-weight-semibold;
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+
+            &__description {
+                color: $grey-100;
+                font-family: $font-family-base;
+                font-size: 20px;
+                font-weight: $font-weight-normal;
+                line-height: 24px;
+                margin-bottom: 12px;
+                max-width: 310px;
+                text-align: left;
+            }
+        }
+
+        &__btn-holder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--title {
+                color: $grey-100;
+                font-family: $font-family-base;
+                font-size: 18px;
+                font-weight: $font-weight-normal;
+                line-height: 24px;
+                margin: 0;
+                max-width: 131px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__spectators-event {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .event-col {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .col-div-one {
+        @include media-breakpoint-up(md) {
+            box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1607843137);
+            height: max-content;
+            padding: 32px 24px 24px;
+        }
+    }
+
+    &__recharge-event {
+        border: 1px solid $red-border;
+        padding: 32px 20px;
+        margin-top: 28px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__quick-details-heading-event {
+        font-family: $font-family-base;
+        font-size: 20px;
+        font-weight: $font-weight-semibold;
+        line-height: 24px;
+        margin-bottom: 0;
+        text-transform: capitalize;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__quick-details-event {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 16px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}

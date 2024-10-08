@@ -1,0 +1,49 @@
+$ns: "c-community";
+.#{$ns} {
+    padding-top: 40px;
+
+    &__heading-div {
+        text-align: center;
+    }
+
+    &__heading {
+        color: $community-heading-color;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__images {
+        display: flex;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+
+    &__image-link {
+        display: block;
+        flex: 0 0 auto;
+    }
+
+    &__image {
+        height: 390px;
+        max-width: 100%;
+        object-fit: cover;
+        width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            height: 250px;
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 328px;
+        }
+    }
+
+    .image-slider {
+        .slick-slide {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

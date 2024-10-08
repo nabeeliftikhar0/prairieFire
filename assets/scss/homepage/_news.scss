@@ -1,0 +1,210 @@
+$ns: "c-news";
+
+.#{$ns} {
+    padding-bottom: 56px;
+    padding-top: 40px;
+
+    @include media-breakpoint-up(sm) {
+        padding-top: 56px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+
+    &__container {
+        padding: 0 20px;
+    }
+
+    &__main-heading {
+        color: $news-main-heaidng-color;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 29px;
+        text-align: center;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 48px;
+            line-height: 38px;
+            margin-bottom: 25px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 64px;
+            line-height: 59px;
+            margin-bottom: 62px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+
+        .slick-dots {
+            position: absolute;
+            bottom: -160px;
+            padding: 0;
+            margin: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(20%);
+            display: flex;
+            list-style: none;
+
+            > li {
+                margin-right: 12px;
+
+                > button {
+                    color: transparent;
+                    border-radius: 50%;
+                    border: 2px solid $slider-border-color;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            .slick-active {
+                > button {
+                    background-color: $slider-active-color;
+                }
+            }
+        }
+    }
+
+    &__card {
+      @include media-breakpoint-between(sm,lg) {
+            &:nth-child(2){
+                margin-right: 0;
+            }
+
+            &:last-child {
+               display: none;
+            }
+        }
+
+        @media (min-width: 768px) {
+            margin-right: 32px;
+
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+
+        &__image {
+            height: auto;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__heading {
+            font-size: 20px;
+            font-weight: $font-weight-semibold;
+            color: $news-card-heaidng-color;
+            line-height: 24px;
+            font-family: "Source Sans Pro";
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 16px;
+                line-height: 20.11px;
+                font-weight: 900;
+                margin-top: 17px;
+                margin-bottom: 16px;
+                max-width: 315px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: $font-size-lg;
+                font-weight: $font-weight-semibold;
+                margin-bottom: 24px;
+                margin-top: 24px;
+                max-width: 100%;
+            }
+        }
+
+        &__description {
+            color: $news-card-para-color;
+            font-size: $font-size-sm;
+            font-weight: $font-weight-normal;
+            margin-bottom: 12px;
+
+            @include media-breakpoint-up(sm) {
+                line-height: 20px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                line-height: 24px;
+            }
+        }
+
+        &__more {
+            color: $news-card-read-color;
+            font-size: 16px;
+            text-decoration: underline;
+
+            @include media-breakpoint-up(sm) {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            &:hover {
+                color: $news-card-read-color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__explore {
+        display: flex;
+        justify-content: center;
+        margin-top: 52px;
+        margin-bottom: 32px;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 0;
+            margin-top: 38px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 62px;
+        }
+
+        a {
+            width: 100%;
+
+            @include media-breakpoint-up(sm) {
+                width: auto;
+            }
+        }
+    }
+
+    .slick-track{
+        justify-content: center;
+    }
+
+    .slick-slider .slick-list .slick-slide {
+        padding: 0;
+    }
+}

@@ -1,0 +1,105 @@
+$ns: experiences-gallery;
+
+.#{$ns} {
+    img {
+        width: 100%;
+        height: 464px;
+        z-index: -2;
+
+        @include media-breakpoint-up(lg) {
+            height: 624px;
+        }
+    }
+
+    .slick-dots li button {
+        background: 0 0;
+        border: 0;
+        color: transparent;
+        font-size: 0;
+        height: 14px;
+        line-height: 0;
+        outline: none;
+        padding: 0;
+        width: 14px;
+
+        &::before {
+            border-radius: 50%;
+            border: 2px solid $white;
+            bottom: 26px;
+            content: "";
+            height: 14px;
+            position: absolute;
+            width: 14px;
+        }
+    }
+
+    .slick-list {
+        .slick-slide {
+            padding: 0;
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 32px;
+        margin-bottom: 0;
+    }
+
+    .slick-dots li {
+        height: 14px;
+        width: 26px;
+        position: relative;
+
+        &::marker {
+            content: none;
+        }
+
+        &.slick-active button:before {
+            background-color: $white;
+        }
+    }
+
+    video {
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+.js-experiencesGallery .slick-prev,
+.js-experiencesGallery .slick-next {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: 35px;
+    z-index: 1;
+}
+
+.js-experiencesGallery .slick-prev {
+    left: 48px;
+}
+
+.js-experiencesGallery .slick-next {
+    right: 48px;
+}
+
+.js-experiencesGallery .slick-prev,
+.js-experiencesGallery .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+    .js-experiencesGallery .slick-prev,
+    .js-experiencesGallery .slick-next {
+        display: none !important;
+    }
+}
