@@ -4144,6 +4144,11 @@ a:hover {
     height: max-content;
   }
 }
+@media (max-width: 1023.98px) {
+  .c-about__second-col {
+    display: none;
+  }
+}
 .c-about__heading {
   color: #35444D;
   font-family: "Teko", sans-serif;
