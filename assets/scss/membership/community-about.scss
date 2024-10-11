@@ -1,0 +1,80 @@
+$ns: about-us;
+
+.#{$ns} {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 120px 0 87px;
+
+    @include media-breakpoint-up(xxl) {
+        background-position: top;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 40px 8px;
+    }
+
+    &__top-container-holder {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-holder {
+        h2 {
+            font-size: 64px;
+            font-weight: $font-weight-bold;
+            line-height: 52px;
+            margin-bottom: 45px;
+            text-align: left;
+            text-transform: uppercase;
+
+            @include media-breakpoint-down(md) {
+                font-size: 32px;
+                line-height: 28px;
+                margin-bottom: 55px;
+            }
+        }
+
+        h3 {
+            font-size: 80px;
+            font-weight: $font-weight-bold;
+            line-height: 72px;
+            margin-bottom: 52px;
+            text-align: left;
+            text-transform: uppercase;
+
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &__description {
+        font-size: 28px;
+        font-weight: $font-weight-bold;
+        line-height: 40px;
+        margin-bottom: 0;
+        max-width: 844px;
+        text-align: left;
+
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            font-weight: $font-weight-semibold;
+            line-height: 24px;
+        }
+    }
+
+    &__img-holder {
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+}

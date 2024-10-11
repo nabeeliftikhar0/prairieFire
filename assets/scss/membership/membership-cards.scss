@@ -1,0 +1,33 @@
+$ns: c-news;
+
+.#{$ns} {
+
+    @include media-breakpoint-up(md) {
+        .membership-cards {
+            flex-wrap: wrap;
+
+            .c-news__card {
+                flex: 0 0 calc(33.33% - 32px);
+
+                &:nth-child(-n+3) {
+                    margin-bottom: 96px;
+                }
+
+                &:last-child {
+                    margin-right: 32px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .c-news__card {
+            display: none;
+        }
+
+        .c-news__card:nth-child(-n+2) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Membership</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/bootstrap/scss/_mixins.scss">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="c-header header-main">
+            <div class="container-fluid">
+                <div class="header-wrapper">
+                    <div class="header-wrapper__inner">
+                        <a href="index.html" class="navbar-brand">
+                            <img
+                                class="logo-img logo-light"
+                                src="assets/images/logo.png"
+                                alt="Logo"
+                                width="120"
+                            >
+                            <img
+                                class="logo-img logo-dark"
+                                src="assets/images/logo-dark.png"
+                                alt="Logo Dark"
+                                width="120"
+                                style="display: none;"
+                            >
+                        </a>
+                        <nav class="navbar navbar-expand-xl navbar-light">
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav"
+                                aria-controls="navbarNav"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="navbar-wrapper">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="./experience.html"
+                                            >
+                                                <span>
+                                                    EXPERIENCES
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="#" class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    EXPERIENCES
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Gunslinger Challenges</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Courses</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="./experience.html">Open Ranges</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    GROUPS
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    GROUPS
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Leadership Training</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Corporate Offsites</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./events.html">
+                                                <span>Events & Competitions</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                            >
+                                                <span>
+                                                    Community
+                                                    <i class="fa-regular fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                                <a class="d-xl-none d-flex back-link">
+                                                    <span>
+                                                        <i class="fa-regular fa-angle-left"></i>
+                                                    </span>
+                                                    Community
+                                                </a>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Membership</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Our Leaders</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">News</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span>Campus</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mobile-options">
+                                        <a href="#" class="user-icon">
+                                            <span>
+                                                <img src="assets/images/user.svg" class="user-img img-fluid">
+                                            </span>
+                                            Login / Signup
+                                        </a>
+                                        <div class="search-wrapper">
+                                            <div class="search-bar">
+                                                <form action="#" method="get">
+                                                    <div class="input-field">
+                                                        <input type="text" class="form-control" placeholder="Search">
+                                                        <span class="search-icon">
+                                                            <img src="assets/images/search.svg" class="img-fluid">
+                                                        </span>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-filled d-block">
+                                            <span>Book Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="header-right desktop-options">
+                            <div class="search-wrapper">
+                                <a href="#" class="btn btn-cta-light header-icons search-toggle">
+                                    <span>
+                                        <img src="assets/images/search.svg" class="search-img img-fluid" alt="Search Icon">
+                                    </span>
+                                </a>
+                                <!-- Hidden search form -->
+                                <div class="search-bar">
+                                    <form action="#" method="get">
+                                        <div class="input-field">
+                                            <input type="text" class="form-control">
+                                            <span class="search-icon">
+                                                <img src="assets/images/search-dark.svg" class="img-fluid">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a
+                                    href="#"
+                                    class="btn btn-cta-light header-icons"
+                                    id="userDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span>
+                                        <img src="assets/images/user.svg" class="user-img img-fluid" alt="User Icon">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-cta-light">
+                                <span>Book Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- banner -->
+        <section class="experience-banner" style="background-image: url(./assets/images/menbership-banner.jpg);">
+            <!-- <video autoplay="autoplay" loop="loop" muted class="c-hero__video-desktop">
+                <source src="./assets/videos/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+            <div class="container">
+                <h1>become a part of something bigger</h1>
+            </div>
+        </section>
+        <!-- anchor-nav -->
+        <section class="anchor-nav">
+            <div class="container">
+                <ul id="navbar">
+                    <li>
+                        <a href="#membership">membership</a>
+                    </li>
+                    <li>
+                        <a href="#plans">plans</a>
+                    </li>
+                    <li>
+                        <a href="#about-us">about us</a>
+                    </li>
+                    <li>
+                        <a href="#news">news</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- membership -->
+        <section class="membership" id="membership">
+            <div class="container">
+                <h2>membership</h2>
+                <div class="membership__text-holder">
+                    <div>
+                        <p>PrairieFire fosters a strong sense of community, where members can learn, support, and grow together. 
+                            By providing unique opportunities and encouragement, we believe we are contributing to a healthier and more vibrant community. 
+                            This sense of belonging is a cornerstone of the true American experience.</p>
+                    </div>
+                    <div>
+                        <ul class="membership__text-holder__list">
+                            <li>
+                                <img src="./assets/images/Layer_1.svg" alt="shooting experiences">
+                                <p><strong>Discounts</strong> on shooting experiences</p>
+                            </li>
+                            <li>
+                                <img src="./assets/images/shoppingmode.svg" alt="shopping mode">
+                                <p><strong>Special Discounts</strong> on private instruction & courses</p>
+                            </li>
+                            <li>
+                                <img src="./assets/images/badge.svg" alt="badge">
+                                <p><strong>FREE</strong> Public Range & archery</p>
+                            </li>
+                            <li>
+                                <img src="./assets/images/badge.svg" alt="badge">
+                                <p>monthly <strong>Guest</strong> Passes</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- application -->
+        <section class="application">
+            <div class="container">
+                <h2>application <br> process</h2>
+                <div class="timeline">
+                    <ul>
+                        <li>
+                            <span>1</span>
+                        </li>
+                        <li>
+                            <span>2</span>
+                        </li>
+                        <li>
+                            <span>3</span>
+                        </li>
+                        <li>
+                            <span>4</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="application__list">
+                    <li>
+                        <img src="./assets/images/read.svg" alt="read">
+                        <p>Read our plans options and click on “Apply Now”</p>
+                    </li>
+                    <li>
+                        <img src="./assets/images/write.svg" alt="write">
+                        <p>Provide contact and payment information</p>
+                    </li>
+                    <li>
+                        <img src="./assets/images/complete.svg" alt="complete">
+                        <p>Complete your application and waiver form</p>
+                    </li>
+                    <li>
+                        <img src="./assets/images/check.svg" alt="check">
+                        <p>Consent to your background check</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- plans -->
+        <section class="plans" id="plans">
+            <div class="container">
+                <h3>OUR MEMBERSHIP plans</h3>
+                <div class="plans__card-holder">
+                    <!-- first card -->
+                    <div class="plans__card">
+                        <h4>liberty</h4>
+                        <h6><strong>2 months off</strong> in annual plans</h6>
+                        <p><span>$19</span> /month <span>$190</span> /year</p>
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>Unlimited Visits</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>PrairieFire Room Access</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 25% off</strong> on Experiences and Paid Training </span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Free</strong> CCW Course and 2 Hour classes   (Intro, etc.)</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Free</strong> Alpha Public Ranges 6&7,  Training Ranges 1-5 and Archery</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Special Price</strong> on Sporting Clays</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 25% off</strong> on Firearm, Side by Side Rental & 1 <strong>annual</strong> FFL Transfers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- second card -->
+                    <div class="plans__card">
+                        <h4>Patriot</h4>
+                        <h6><strong>2 months off</strong> in annual plans</h6>
+                        <p><span>$39</span> /month <span>$190</span> /year <span>+initiation fee</span></p>
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>Unlimited Visits</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>PrairieFire Room Access</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 25% off</strong> on Experiences and Paid Training </span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Free</strong> CCW Course and 2 Hour classes   (Intro, etc.)</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Free</strong> Alpha Public Ranges 6&7,  Training Ranges 1-5 and Archery</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Special Price</strong> on Sporting Clays</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>6 Guest Passes</strong> per Month</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 25% off</strong> on Firearm, Side by Side Rental & 1 <strong>annual</strong> FFL Transfers</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 5% off</strong> on Firearm purchase</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- third card -->
+                    <div class="plans__card">
+                        <h4>Freedom</h4>
+                        <h6><strong>2 months off</strong> in annual plans</h6>
+                        <p><span>$300</span> /month <span>$3000</span> /year <span>+initiation fee</span></p>
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>Unlimited Visits</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>team Room Access</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span>PrairieFire Room Access</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>free and full access</strong> to experiences, courses and paid training</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>50% off</strong> on one mile shot</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>1 free ticket /year</strong> shoot with SOF events + <strong>25% off additional</strong>tickets</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Free</strong> Alpha Public Ranges 6&7,  Training Ranges 1-5 and Archery</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Special Price</strong> on Sporting Clays</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>6 Guest Passes</strong> per Month</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>free</strong> Firearm, Side by Side Rental Two boxes of ammo & free FFL Transfer</span>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-check"></i>
+                                <span><strong>Up to 10% off</strong> on Firearm purchase</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plans__btn">
+                    <a href="#" class="btn btn-outline-dark">apply now!</a>
+                </div>
+            </div>
+        </section>
+        <!-- about us -->
+        <section class="about-us" id="about-us" style="background-image: url(./assets/images/community-aboutus-bg.png);">
+            <div class="container">
+                <div class="about-us__top-container-holder">
+                    <div class="about-us__text-holder">
+                        <h2>about us</h2>
+                        <h3>BREAK BOUNDARIES.<br>PURSUE EXCELLENCE.<br>LEADERS NEVER ARRIVE.</h3>
+                        <div class="about-us__description">
+                            PrairieFire is a place where members and guests of all skill levels can participate in unique Special Operations-inspired Gunslinger challenges that elevate the power of teamwork, leadership and extreme trust - the foundation of the American idea.
+                        </div>
+                    </div>
+                    <div class="about-us__img-holder">
+                        <img src="./assets/images/about-us-community.svg" alt="star img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- leaders -->
+        <section class="leaders">
+            <div class="container">
+                <h2>
+                    meet our leaders
+                </h2>
+                <div class="leaders__slider js-leaderSlider">
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-1.png" alt="scott miller">
+                        </div>
+                        <h3>Scott Miller</h3>
+                        <h5>General (Ret.)</h5>
+                        <h6>Executive Chairman</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-2.png" alt="scott miller">
+                        </div>
+                        <h3>Mark O’Neil</h3>
+                        <h5>Major General (Ret.)</h5>
+                        <h6>Vice Chairman</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-3.png" alt="scott miller">
+                        </div>
+                        <h3>Nate Horvath</h3>
+                        <h6>Chief Executive Officer</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-4.png" alt="scott miller">
+                        </div>
+                        <h3>Levi Rogers</h3>
+                        <h6>Chief Operating Officer</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-5.png" alt="scott miller">
+                        </div>
+                        <h3>Chad Brown</h3>
+                        <h6>Chief Marketing Officer</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-1.png" alt="scott miller">
+                        </div>
+                        <h3>Scott Miller</h3>
+                        <h5>General (Ret.)</h5>
+                        <h6>Executive Chairman</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                    <div>
+                        <div class="leaders__slider__img-holder">
+                            <img src="./assets/images/leader-2.png" alt="scott miller">
+                        </div>
+                        <h3>Scott Miller</h3>
+                        <h5>General (Ret.)</h5>
+                        <h6>Executive Chairman</h6>
+                        <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#leader_popup">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- news section -->
+        <section class="c-news" id="news">
+            <div class="container c-news__container">
+                <div class="c-news__head">
+                    <h2 class="c-news__main-heading">NEWS</h2>
+                </div>
+                <div class="c-news__cards news-cards membership-cards">
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news1.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news2.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">PRAIRIEFIRE CELEBRATES A NEW ANNIVERSARY</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news3.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news1.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news2.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">PRAIRIEFIRE CELEBRATES A NEW ANNIVERSARY</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                    <div class="c-news__card">
+                        <figure class="mb-0">
+                            <img class="c-news__card__image" src="./assets/images/news3.png" alt="first-card-image">
+                        </figure>
+                        <p class="c-news__card__heading">WE ARE GLAD TO ANNOUNCE A NEW COURSE!</p>
+                        <p class="c-news__card__description">Navigate a real desert canyon, testing your instincts and accuracy in an unforgettable adventure for all skill levels...</p>
+                        <a
+                            class="c-news__card__more"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >Read More</a>
+                    </div>
+                </div>
+                <div class="c-news__explore">
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-dark "
+                    >Explore All News</a>
+                </div>
+            </div>
+        </section>
+        <!-- help -->
+        <section class="c-help">
+            <div class="container">
+                <div class="c-help__text-holder">
+                    <h2 class="c-help__title">Have questions about <br>becoming a part of our <br>community?</h2>
+                </div>
+                <div class="c-help__btn">
+                    <a href="#" class="btn btn-outline-light">lests talk!</a>
+                </div>
+            </div>
+        </section>
+        <!-- Leader Popup -->
+        <div class="leader-popup modal fade" id="leader_popup" tabindex="-1" aria-labelledby="leader_popup" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content leader-popup__content">
+                    <button type="button" class="leader-popup__close" data-bs-dismiss="modal" aria-label="Close"><img src="./assets/images/close.png"></button>
+                    <div class="modal-body leader-popup__body">
+                        <div class="leader-popup__profile">
+                            <div class="leader-popup__profile__img-holder">
+                                <img src="./assets/images/leader-1.png" alt="scott miller">
+                            </div>
+                            <div class="leader-popup__profile__info">
+                                <h3>Scott Miller</h3>
+                                <p>General (Ret.)</p>
+                                <h6>Executive Chairman</h6>
+                            </div>
+                        </div>
+
+                        <div class="leader-popup__profile__detail">
+                            General Austin "Scott" Miller, assuming the role of Executive Chairman for Prairie Fire Nevada in January 2023, boasts a distinguished career spanning over 38 years in uniform. Graduating from the United States Military Academy at West Point in 1983, he retired from active duty in 2021, leaving an indelible mark on some of the world's most complex geopolitical landscapes. <br> <br>
+                            Throughout his tenure, General Miller, an Airborne-Ranger and Infantry officer, commanded at various levels, from leading a company in Korea to spearheading the TF Ranger assault force in Mogadishu during the infamous "Blackhawk Down" incident. His leadership extended to commanding the Joint Special Operations Command and culminated in serving as the final commander of NATO's Resolute Support Mission and United States Forces Afghanistan. <br> <br>
+                            A stalwart figure in the Global War on Terror, General Miller distinguished himself as one of the earliest Americans to engage in the pursuit of Usama Bin Laden and other high-value targets. His extensive combat experience includes commanding multiple Special Operation Task Forces across the Middle East and South Asia. <br> <br>
+                            Notably, as commanding general of the United States Army Maneuver Center of Excellence at Fort Benning in 2014, General Miller led efforts to integrate women into the prestigious U.S. Army Ranger School, a pivotal step forward in gender equality within the military. <br> <br>
+                            General Miller's accolades include two Combat Infantryman Badges, two Purple Hearts, the Silver Star and a remarkable 20 Overseas Service Bars, underscoring his unparalleled dedication with over a decade spent in combat zones
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer section -->
+        <footer>
+            <div class="c-footer">
+                <div class="container c-footer__container">
+                    <div class="c-footer__challange">
+                        <figure class="mb-0">
+                            <img src="./assets/images/PF logo.svg" alt="logo" class="c-footer__challange__logo">
+                        </figure>
+                        <div class="c-footer__challange__new">
+                            <span class="c-footer__challange__new__update">STAY UP TO DATE WITH US</span>
+                            <form class="c-footer__challange__new__in-width">
+                                <input class="c-footer__challange__new__in-width__input" type="email" placeholder="Email*">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="c-footer__wrap">
+                        <div class="c-footer__events">
+                            <div class="c-footer__join">
+                                <div class="c-footer__join__peragraph">
+                                    <strong>More challenges are coming in 2024.</strong>
+                                    <br>
+                                    <p class="c-footer__join__peragraph__experience mb-0">
+                                        We are building a portfolio of outdoor challenges that will be unmatched.
+                                        <br>
+                                        Our team has over 200 years of experience creating unique courses to challenge your skill set.
+                                    </p>
+                                </div>
+                                <div class="c-footer__join__links">
+                                    <span class="c-footer__join__links__heading">JOIN US</span>
+                                    <ul class="c-footer__join__links__bar">
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/youtube.svg" alt="youtube">
+                                            </a>
+                                        </li>
+                                        <li class="c-footer__join__links__bar__item">
+                                            <a href="#">
+                                                <img src="./assets/images/linkedin.svg" alt="linkedin">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map c-footer__events__map--wrap">
+                                <p class="c-footer__events__map__heading">site map</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column ">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Shooting Challenges</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Competitions</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Executive Development</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="./events.html">Events</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Memberships</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">Useful links</p>
+                                <ul class="c-footer__events__map__menu c-footer__events__map__menu--column">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--desktop" href="#">Frequent Asked Questions</a>
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--tablet " href="#">FAQs</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Safety Considerations</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">PrairieFire Rules</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Careers</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link" href="#">Partnerships</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <p class="c-footer__events__map__heading">WHERE WE ARE</p>
+                                <ul class="c-footer__events__map__menu">
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__link c-footer__events__map__menu__item__link--width-set " href="#">1 PrairieFire Road, Pahrump, NV 89061</a>
+                                    </li>
+                                    <li class="c-footer__events__map__menu__item">
+                                        <a class="c-footer__events__map__menu__item__im-map">
+                                            <img src="./assets/images/Map.svg" alt="map.svg" class="map">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="c-footer__popup">
+                                    <button class="c-footer__popup__close popup-close">
+                                        <img src="./assets/images/close.png" alt="close" class="c-footer__popup__close-img">
+                                    </button>
+                                    <h4 class="c-footer__popup__heading">
+                                        We're closer
+                                        than you think!
+                                    </h4>
+                                    <p class="c-footer__popup__address">1 PrairieFire Road, Pahrump, NV 89061</p>
+                                    <a class="c-footer__popup__google" href="#">Go to Google Maps</a>
+                                </div>
+                            </div>
+                            <div class="c-footer__events__map">
+                                <div class="c-footer__events__map__hrs">
+                                    <p class="c-footer__events__map__heading">Working Hours</p>
+                                    <ul class="c-footer__events__map__menu c-footer__events__map__menu--con-hrs c-footer__events__map__menu--column">
+                                        <li class="c-footer__events__map__menu__contact">Monday-Friday:</li>
+                                        <li class="c-footer__events__map__menu__contact c-footer__events__map__menu__contact--margin">6am - 4pm</li>
+                                        <li class="c-footer__events__map__menu__contact">Saturday & Sunday</li>
+                                        <li class="c-footer__events__map__menu__contact">9am - 6pm</li>
+                                    </ul>
+                                </div>
+                                <div class="c-footer__events__map__contact">
+                                    <p class="c-footer__events__map__contact__heading">CONTACT US</p>
+                                    <ul class="c-footer__events__map__contact__menu">
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="tel:702-837-7433">702-837-7433</a>
+                                        </li>
+                                        <li class="c-footer__events__map__contact__menu__item">
+                                            <a class="c-footer__events__map__menu__item__link" href="mailto:Phello@prairiefire.com">Phello@prairiefire.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-footer__copyright">
+                <span class="c-footer__copyright__text">
+                    © 2024
+                    <strong> PrairieFire Nevada</strong>
+                    All Rights Reserved
+                </span>
+            </div>
+        </footer>
+        <script src="./assets/js/jquery-3.7.1.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+        <script src="./assets/js/community.js"></script>
+    </body>
+</html>

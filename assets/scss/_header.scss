@@ -634,6 +634,7 @@ $ns: c-header;
     }
 
     &.mobile-active {
+        z-index: 10000;
         background-color: $white;
     }
 

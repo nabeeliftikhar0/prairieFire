@@ -1,0 +1,102 @@
+$ns: membership;
+
+.#{$ns} {
+    padding: 48px 8px;
+
+    @include media-breakpoint-up(md) {
+        padding: 96px 0;
+    }
+
+    h2 {
+        color: $secondary-color;
+        font-family: $heading-font-family;
+        font-size: 48px;
+        font-weight: $font-weight-bold;
+        line-height: 48px;
+        margin-bottom: 20px;
+        text-align: left;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(md) {
+            font-size: 64px;
+            line-height: 64px;
+            margin-bottom: 53px;
+        }
+    }
+
+    &__text-holder {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+
+        & > div {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 50%;
+            }
+        }
+
+        & > div:first-child {
+            color: $primary-color;
+            font-family: $font-family-base;
+            font-size: 20px;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+            margin: 0;
+            text-align: left;
+
+            @include media-breakpoint-up(md) {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+
+        p {
+            color: $primary-color;
+            font-family: $font-family-base;
+            font-size: 20px;
+            font-weight: $font-weight-normal;
+            line-height: 24px;
+            margin: 0;
+            text-align: left;
+
+            @include media-breakpoint-up(md) {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+
+        &__list {
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+                align-items: center;
+                display: flex;
+                padding-bottom: 34px;
+
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
+
+                img {
+                    height: auto;
+                    max-width: 100%;
+                    padding-right: 32px;
+                }
+
+                p {
+                    color: $secondary-color;
+                    font-size: 20px;
+                    font-weight: $font-weight-normal;
+                    line-height: 22px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
