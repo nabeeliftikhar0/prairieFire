@@ -527,12 +527,3 @@ $(document).ready(function () {
 		tabContentShowHideMobile($(this));
 	});
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('.c-hero__video-mobile');
-    if (video) {
-        video.play().catch(function(error) {
-            console.log("Autoplay failed", error);
-        });
-    }
-});
