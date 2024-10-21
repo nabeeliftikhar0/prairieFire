@@ -303,6 +303,10 @@ a:hover {
   z-index: 1000;
 }
 
+.slick-dots {
+  list-style: none;
+}
+
 .c-header {
   left: 0;
   position: absolute;
